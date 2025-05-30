@@ -1,0 +1,62 @@
+// Brian's Cheat Sheet for Using Git Competently
+
+// the basics 
+git add <file1> <file2>                   // add files to commit
+git commit -m "message"                   // commit with message
+git push origin master                    // push commit to github/remote
+git push                                  // defaults to same
+git pull                                  // pull changes from remote and merge with local
+git fetch origin                          // get most recent code from repo
+git clone <https://website.com/jfuvo8i>   // clone repo to current directory
+git status                                // see list of files tracked/added/etc
+git diff                                  // see differences between previous commit and working set
+git diff staged                           // see differences only relevant to those staged (added)
+git checkout <branch>                     // switch local repo to branch
+
+
+// a little bit more complicated 
+git tag                                   // set a tag point which can be used for reference later
+git merge <commit>                        // merge current commit and specified commit together to new commit
+git branch <commitname>                   // make new branch with name
+git branch -d <commitname>                // delete branch
+git push origin master --force            // (dangerous!) overwrite remote repo with current commit
+git stash                                 // stash away your changes for later (local)
+git stash save <name>                     // save stash as name
+git stash pop                             // get your changes back
+git stash list                            // see all stashes
+git stash apply <index>                   // load stash with index from list
+git rebase <branch>                       // (dangerous with others!) consolidate commits
+git commit --sqaush -m "message"          // commit but in the case of a rebase defualt to squash
+git rebase -i --autosquash                // ditto (more like step 2)
+
+
+// damage control
+git reset <commit>                        // remove all later commits from log and move head to commit
+git reset <commityoudeleted>              // reverts the effect of reset (those commits were never deleted)
+git revert <commit>                       // moves back to commit
+git bisect start                          // helps you locate a bug's origin point by stepping through commits (starts utility)
+git bisect good                           // let bisect know the bug is not in this commit
+git bisect bad                            // let bisect know the bug is in this commit
+git reset --hard <branch>                 // nuke local code with remote code from branch
+git clean -df                             // clean up untracked files and starys in local repo
+git push origin --delete                  // delete branch in remote
+
+
+// tips 
+git add .                                 // stage all modifications without deletions
+git add -A                                // stage all changes
+git commit -am "message"                  // add all files in repo to commit automatically 
+git commit --amend -m "newmessage"        // edits last commit message for when you mess up (also add more files)
+git commit --amend --no-edit              // ditto but keep same message
+git branch -M <name>                      // change branch name
+git checkout -                            // jump to previous branch
+
+
+// what the heck is going on
+git log                                   // see commit history
+git log --graph --oneline --decorate      // git log, but user friendy and with ascii art
+
+
+// setup 
+git config                                // opens up git config file
+git config --global alias.ac "command"    // create a alias for a command to make things faster

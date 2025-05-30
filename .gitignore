@@ -6,7 +6,7 @@ node_modules
 .netlify
 .wrangler
 /.svelte-kit
-/build
+#/build  # the dumb way I have my webserver setup we don't compile onboard
 
 # OS
 .DS_Store

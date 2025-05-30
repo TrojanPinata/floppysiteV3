@@ -1,0 +1,263 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{atbegshi}
+\usepackage{changepage}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-2pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% QR CODE
+\AtBeginShipoutNext{\AtBeginShipoutUpperLeft{
+  \put(\dimexpr\paperwidth-3.8cm\relax,-3.45cm){\includegraphics[width=2.6cm]{website.png}}
+}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    \textbf{\Huge \scshape Brian Hill} \\ \vspace{3pt}
+    \small 
+    Haymarket, VA  $|$ \small 703-946-1545 $|$ \href{mailto:hillbr20@gmail.com}{\underline{hillbr20@gmail.com}} \\ \vspace{1pt}
+    \href{https://www.linkedin.com/in/brian-hill-0082161a3/}{\underline{LinkedIn: brian-hill-0082161a3}} $|$
+    \href{https://github.com/TrojanPinata}{\underline{Github @TrojanPinata}} $|$
+    \href{https://brianchill.us/}{\underline{brianchill.us/}} \\ 
+\end{center}
+
+%-----------SUMMARY------------
+\section{Summary}
+  \vspace{2pt} 
+  \small \begin{adjustwidth}{0.15in}{0in}
+	Software developer well-versed in embedded systems and microcontroller programming.
+	Driven to implement robust, real-world solutions applicable to a wide range of situations while focusing on meeting and exceeding customer expectations. 
+	Strong knowledge in both software development and hardware engineering, providing a blend of both skill sets while implementing complex solutions.
+	Brings a unique outlook and energy to new situations and environments providing valued solutions to a variety of customers.
+\end{adjustwidth}
+
+%-----------CLEARANCE------------
+\section{Clearance}
+
+\hspace{1em}
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+\vspace{3pt}
+        \small Active Public Trust Clearance & \textit{\small May 2023} \\
+    \end{tabular*}
+\vspace{-5pt}
+
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Developer}{Chantilly, VA}
+      {CACI International Inc.}{May 2023 – Present}
+      \resumeItemListStart
+        \resumeItem{Modified and develop SQL scripts for conversion between government financial systems.}
+        \resumeItem{Developed Python-Selenium-based Robotic Process Automation (RPA) software for automated testing of government financial software (Momentum).}
+        \resumeItem{Utilized government-based Agile approach to efficiently iterate on customer requirements.}
+        \resumeItem{Deployed and release solutions to client with minimal downtime and confirmed functionality.}
+        \resumeItem{Tested and maintained current and legacy systems to validate performance and compliance with current systems.}
+        \resumeItem{Analyzed client requirements and create necessary documentation for future development and integration.}
+        \resumeItem{Worked with experienced team members to design workflows surrounding previous software solutions.}
+        \resumeItem{Evaluated and implemented new interface technologies to provide fresh and intuitive user experience.}
+        \resumeItem{Developed Node-based GUI for Python backend in ReactJS.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Sales Associate and Print Specialist}{Manassas, VA}
+      {The UPS Store}{November 2020 – March 2025}
+      \resumeItemListStart
+        \resumeItem{Managed Enterprise IT network and point of sales systems to handle high traffic with minimal downtime.}
+        \resumeItem{Upgraded and install Point of Sale (POS) systems to meet corporate guidelines.}
+        \resumeItem{Implemented methods to efficiently manage multiple enterprise grade network printers.}
+        \resumeItem{Worked with a team to ensure the stability and integrity products through logistics process.}
+        \resumeItem{Designed client products using mainstream graphic design software.}
+      \resumeItemListEnd
+      
+    \resumeSubHeadingListEnd
+
+%
+%-----------TECHNICAL SKILLS-----------
+\section{Skills \& Attributions}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     % \textbf{Clearance}{: Public Trust} \\
+     \textbf{Languages}{: Python, C/C++, Rust,  Java, PL/SQL, MATLAB, VHDL, JS/Web, Bash} \\
+     \textbf{Software}{: MS Office, Adobe CC, Autodesk Inventor, Xilinx Vivado/Vitis, KiCAD, PSpice, Docker, Git, Jenkins, SQL Developer, Nginx/Apache, Node, OpenCV, Linux, Proxmox} \\
+     \textbf{Development Focuses}{: Microcontrollers, Embedded Systems, Internet of Things, Autonomous Control Systems, Embedded Linux Systems, FPGAs} \\
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {George Mason University}{Fairfax, VA}
+      {Computer Engineering, BS}{}
+          \resumeItemListStart
+            \resumeItem{Notable Courses: Circuit Analysis I/II, Data Structures and Embedded Systems Programming, Continuous-Time Signals and Systems, Networking, Operating Systems, Computer Architecture, Embedded Systems, Linear Electronics, FPGA Design in VHDL, Microcontrollers, Internet of Things, Mobile Robots}
+            
+        \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS & CERTS-----------
+\section{Awards \& Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     {\textbf{AWS Cloud Practitioner Accreditation} $|$ {June 2023}} \\ 
+     {\textbf{GMU Tech Talent Awards} $|$ {Multiple Years}}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Personal Projects \& Research}
+  \resumeSubHeadingListStart
+
+     \resumeSubheading
+      {Autonomous Lighter Than Air Vehicle Capstone}{}
+      {\href{https://mason.gmu.edu/~nyao4/2023/05/02/we-won-the-defend-the-republic-robotic-blimps-competition/}{mason.gmu.edu/~nyao4/}}{}
+      \resumeItemListStart
+        \resumeItem{Office of Naval Research sponsored project via GMU CIAO Lab.}
+        \resumeItem{Developed unique shared Center of Gravity/Center of Buoancy blimp from common components for high reproducibility while maintaining high maneuverability.}
+        \resumeItem{Trained object detection model (YOLOv8) in high performance formats for reduced latency and to allow for accurate and fast detection.}
+        \resumeItem{Designed and implemented fully functioning object detection, localization, and controls system in both C++ and Python.}
+        \resumeItem{Tested and deployed codebases on battery constrained hardware with four motor stabilization system and sensors.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Keyboard Design}{}
+      {\href{https://brianchill.us/\#/Keyboard}{brianchill.us/\#/Keyboard} \& \href{https://github.com/TrojanPinata/Model-B}{https://github.com/TrojanPinata/Model-B}}{}
+      \resumeItemListStart
+        \resumeItem{Designed PCB for external manufacturing using chosen layouts, and configuration of all onboard components.}
+        \resumeItem{Added functionality to existing firmware and documented changes/code on Github.}
+        \resumeItem{Wrote bill of materials and chose cost effective components for design which were implemented into final product.}
+        \resumeItem{Designed and manufactured ergonomic housing to contain assembly while remaining unique against other designs on the market.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Open-Source Macropad}{}
+      {\href{https://brianchill.us/\#/Macropad}{brianchill.us/\#/Macropad} \& \href{https://github.com/TrojanPinata/Macropad-Pico}{https://github.com/TrojanPinata/Macropad-Pico}}{}
+      \resumeItemListStart
+        \resumeItem{Designed simple, easy to manufacture 3D printed case, printable on any 3D printer.}
+        \resumeItem{Wrote firmware based on existing, widely used software to promote consitancy between similar keyboards.}
+        \resumeItem{Engineered PCB for cost effective production with alternatives to reduce reliance on third party manufacturing.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Drawing Robot}{}
+      {\href{https://brianchill.us/\#/PiDraw}{brianchill.us/\#/PiDraw}}{}
+      \resumeItemListStart
+        \resumeItem{Developed program for decoding location instructions and drawing on custom designed hardware.}
+        \resumeItem{Designed CAD model of all components for low material 3D printing and structural stability during high stress movements.}
+        \resumeItem{Used OpenCV to process images and generate location instructions from input images.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {OpAmp-based Line Following Robot}{}
+      {\href{https://brianchill.us/\#/LineFollower}{brianchill.us/\#/LineFollower}}{}
+      \resumeItemListStart
+        \resumeItem{Designed Opamp based platform to drive four motors - Controlled by photoresistor-LED, TX-RX design.}
+        \resumeItem{Integrated low-budget off the shelf components into design to satisfy budget requirements.}
+        \resumeItem{Designed and manufactured PCB by hand for faster design-manufacturing turn around.}
+      \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

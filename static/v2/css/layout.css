@@ -1,0 +1,334 @@
+/*
+=====================================================================
+*   A big part of this was used from:
+*   Ceevee v1.0 Layout Stylesheet
+*   url: styleshout.com
+*   03-18-2014
+
+===================================================================== */
+
+body { background: #000000; }
+
+/* ------------------------------------------------------------------ */
+
+header {
+   position: relative;
+   height: 800px;
+   min-height: 500px;
+   width: 100%;
+   
+   text-align: center;
+   overflow: hidden;
+   background-color: #e7e7e7;
+}
+
+/* vertically center banner section */
+header:before {
+   content: '';
+   display: inline-block;
+   vertical-align: middle;
+   height: 100%;
+}
+header .banner {
+   display: inline-block;
+   vertical-align: middle;
+   margin: 0 auto;
+   width: 85%;
+   padding-bottom: 30px;
+   text-align: center;
+}
+
+header .banner-text { width: 100%; }
+header .banner-text h1 {
+   font: 90px/1.1em 'ibm-plex-sans', monospace;
+   color: #000000;
+   letter-spacing: -2px;
+   margin: 0 auto 18px auto;
+}
+header .banner-text h3 {
+   font: 18px/1.9em 'ibm-plex-sans', monospace;
+   color: #000000;
+   margin: 0 auto;
+   width: 70%;
+}
+header .banner-text h3 span,
+header .banner-text h3 a {
+   color: #000000;
+}
+header .banner-text hr {
+   width: 60%;
+   margin: 18px auto 24px auto;
+   border-color: #2F2D2E;
+   border-color: rgba(150, 150, 150, .1);
+}
+
+/* scrolldown link */
+header .scrolldown a {
+   position: absolute;
+   bottom: 30px;
+   left: 50%;
+   margin-left: -29px;
+   color: #000000;
+   display: block;
+   height: 42px;
+   width: 42px;
+   font-size: 42px;
+   line-height: 42px;
+   color: #000000;
+   border-radius: 100%;
+
+   -webkit-transition: all .3s ease-in-out;
+   -moz-transition: all .3s ease-in-out;
+   -o-transition: all .3s ease-in-out;
+   transition: all .3s ease-in-out;
+}
+header .scrolldown a:hover { color: #a70000; }
+
+/* ------------------------------------------------------------------ */
+
+#projects {
+   text-align: center;
+}
+
+#projects a, #projects a:visited  { color: #fff; }
+#projects a:hover, #projects a:focus { color: #000000; }
+
+#projects .projectList {
+   width: 100%;
+   padding-top: 6px;
+   font: 18px/22px 'ibm-plex-sans', monospace;
+   background-image: url("rose.webp");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-bottom: 40px;
+   padding-top: 40px;
+}
+#projects .projectList .projectButton {
+   padding-block: 4px;
+}
+#projects .projectList .projectButton:hover {
+   color: #000000;
+}
+#projects .projectList p {
+   padding-block: 4px;
+   color: #e7e7e7;
+}
+#projects .projectList h3 {
+   display:flex;
+   justify-content: center;
+}
+#projects .projectList h3::before {
+   content: 'Here are the projects I spend my time on:';
+   color: #e7e7e7;
+   background-color: #000000;
+   font: 22px/30px 'ibm-plex-sans', monospace;
+   padding: 2px 6px 2px 6px;
+}
+
+/* ------------------------------------------------------------------ */
+
+#about {
+   background: #e7e7e7;
+   padding-top: 96px;
+   padding-bottom: 66px;
+   overflow: hidden;
+}
+
+#about a, #about a:visited  { color: #ffffff; }
+#about a:hover, #about a:focus { color: #ffffff; }
+
+#about h2 {
+   margin-bottom: 12px;
+   display:flex;
+   justify-content: left;
+}
+#about h2::before {
+   content: 'Who am I?';
+   color: #e7e7e7;
+   background-color: #000000;
+   font: 22px/30px 'ibm-plex-sans', monospace;
+   padding: 0 6px 0 6px;
+}
+#about p {
+   font: 16px/18px 'ibm-plex-sans', monospace;
+   line-height: 25px;
+   color: #000000;
+}
+#about .links p {
+   font: 16px/18px 'ibm-plex-sans', monospace;
+   margin-bottom: 5px;
+   margin-left: 20px;
+   color: #000000;
+}
+#about .profile-pic {
+   position: relative;
+   width: 180px;
+   height: 180px;
+   border-radius: 100%;
+}
+#about .download {
+   width: 100%;
+   padding-top: 6px;
+}
+#about .main-col { padding-right: 5%; }
+#about .download .button {
+   margin-top: 6px;
+   background: #000000;
+   font: 16px/20px 'ibm-plex-sans', monospace;
+   width: 180px;
+   text-align: center;
+   margin-bottom: 5px;
+}
+#about .download .button:hover {
+   background: #e7e7e7;
+   color: #000000;
+}
+#about .download .button i {
+   margin-right: 15px;
+   font-size: 20px;
+}
+
+/* ------------------------------------------------------------------ */
+
+footer {
+   padding-top: 48px;
+   margin-bottom: 48px;
+   color: #5e5e5e;
+   font-size: 14px;
+   text-align: center;
+   position: relative;
+}
+
+footer a, footer a:visited { color: #525252; }
+footer a:hover, footer a:focus { color: #fff; }
+
+/* bottom-cr */
+footer .bottom-cr {
+    margin: 0;
+    padding: 0;
+    font: 14px/18px 'ibm-plex-sans', monospace;
+ }
+footer .bottom-cr li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    line-height: 24px;
+}
+.ie footer .bottom-cr li {
+   display: inline;
+}
+footer .bottom-cr li:before {
+    content: "\2022";
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #7d687e;
+}
+footer .bottom-cr  li:first-child:before {
+    display: none;
+}
+
+/* social links */
+footer .social-links {
+   margin: 18px 0 30px 0;
+   padding: 0;
+   font-size: 30px;
+}
+footer .social-links li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 42px;
+    color: #F06000;
+}
+
+footer .social-links li:first-child { margin-left: 0; }
+
+
+.social .btn:first-child{
+   margin-right: 30px;
+}
+.social .btn{
+   padding-left: 30px;
+   padding-right: 30px; 
+}
+.social .btn i{
+   margin-right: 15px;
+}
+
+/* ------------------------------------------------------------------ */
+.nopage {
+   background-color: #e7e7e7;
+   height: 100%;
+   width: 100%;
+   min-height: 50px;
+   position: absolute;
+}
+.nopage h3{
+   display:flex;
+   justify-content: center;
+}
+.nopage h3::before {
+   content: '<404>';
+   color: #e7e7e7;
+   background-color: #000000;
+   font-family: IBM Plex Sans, monospace;
+   font-size: 20px;
+   font-weight: 600;
+   margin: 15% auto -2px auto;
+   padding: 0 6px 0 6px;
+}
+.nopage p {
+   color: #000000;
+   text-align: center;
+   font-family: IBM Plex Sans, monospace; 
+   font-size: 18px;
+   font-weight: 600;
+   justify-content: center;
+}
+.nopage img {
+   margin-left: auto;
+   margin-right: auto;
+   position: center;
+   width: auto;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+
+/* ------------------------------------------------------------------ */
+.proj {
+   padding: 5% 20% 5% 20% ;
+   background-color: #e7e7e7;
+}
+.proj h3 {
+   font-family: IBM Plex Sans, monospace; 
+   color: #e7e7e7;
+   background-color: #000000;
+   display:inline;
+   padding: 2px 6px 2px 6px;
+}
+.proj p {
+   font-family: IBM Plex Sans, monospace;
+   color: #000000;
+   padding-top: 6px;
+}
+.proj img {
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+   justify-content: center;
+   display: flex;
+   padding-bottom: 24px;
+}
+
+.proj a, .proj a:visited { color: #008fc7; }
+.proj a:hover, footer a:focus { color: #c341ff; }
+
+.proj .Youtube {
+   margin-left: auto;
+   margin-right: auto;
+   justify-content: center;
+   display: flex;
+   padding-bottom: 24px;
+}
