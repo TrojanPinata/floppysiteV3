@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+	<script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/app.CuxvBB9u.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Footer.CgORz9JN.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/4.V2TXjpPM.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.Dee_bdHB.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BkPmQs92.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/2HRQVGUp.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.C2ahTJtZ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Bew-Z_3u.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DXAlC3_6.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/JMAyBti-.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.DGoemtwr.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DMVHMjpm.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.CtLGBnTZ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BdTIQDss.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects"><button class="fixed top-4 left-4 text-sm px-4 py-2 rounded hover:bg-cyan-100 transition">← Back</button></a> <div class="bg-neutral-100 font-mono px-4 py-12 min-h-screen"><section class="max-w-4xl mx-auto"><h1 class="text-4xl font-bold mb-2">Zipf's Law</h1> <p class="text-sm text-gray-500 mb-6">2022-07-18</p> <div class="content space-y-6 text-base text-neutral-800 leading-relaxed"><!----><p>This is going to be a different kind of page for this little personal site. I’m currently in the middle of a much larger project, but I was recently going over some abstract ways of sorting data for a different kind of project than I’ve ever done before, when I was reminded of a very strange natural law. In language, alphabets, physics, and natural distributions, there is sometimes, no, a lot of the time, a tendency for data to fall into what is called a Zipfian distribution, and thus Zipf’s Law. </p>
+<p>To explain in a somewhat digestible manner, these natural and even man-made concepts and tools will more likely than not fall into a close to perfect logarithmic distribution, where the most common item in a set is twice as likely to appear as the second most common, and three times as likely to appear as the third most, and so on and so forth. And this is a harsh generalization of the law. (<a href="https://en.wikipedia.org/wiki/Zipf%27s_law">Wikipedia link so I don’t have to explain it all</a>) Just know that the number of instances of an item in a set of data follows a number n1(1/nr), where n1 is the most common item, and nr is the number at a given rank. To me, this is interesting as it is, but I am more interested in applying this. </p>
+<p>The first thing I thought to do was to break down large data sets like the using all of the information from Wikipedia or something. But I really don’t want to spend all of the time and energy trying to figure out a way to get every single Wikipedia page’s word breakdown and sort it all into a excel spreadsheet. That sounds… rough. But I did still want to use a larger piece of literature, so I chose Ulysses by Janice Joyce. Honestly, I have gotten about one fifth the way through this (it’s really tough), and I thought that instead of finishing it, why don’t I just take the break down and see if it satisfies the law? </p>
+<p>In order to do this, I decided to use a python script to break it into its individual words, clean them up, sort, and rank them. Which does in fact work. I will say this, however. If I were to do this again, I would use C or something faster. The script is on <a href="https://github.com/TrojanPinata/zipf">github</a> if you want to check it out, but it is very slow, breaking this whole thing apart in 15 minutes. That’s mostly because I wrote sloppy code (I guess), but the way python preforms and the sheer amount of data to be sorted (263,346 words) made this slightly annoying. </p>
+<p>But in the end, my relatively simple code outputs some really interesting, but expected results. Here is the list of the <a href="https://en.wikipedia.org/wiki/Most_common_words_in_English">top 50 most common words</a> and here is my <a href="https://i.imgur.com/Hy7Zogu.png">output list</a>. Pretty similar, eh? In fact, it even aligns with the logarithmic principle Zipf’s law applies to. Here is the curve when plotted with Excel. </p>
+<img src="https://i.imgur.com/bDfezKQ.png" alt="Zipfian curve" />
+
+<p>I find this really interesting in both the principle and how easy it was for me to get my own data. I wanted to see how professional sources stack up and I was planning to post all of the trials I ran, but in reality, the data is kind of boring. Its all the exact same thing, same rank, with a few outliers and different total word count. The most interesting thing I put through my script was my own <a href="https://i.imgur.com/tV8hCd9.png">paper from high school</a>, and sure enough it had the exact same result. Overall, it’s kind of scary. There is the common saying that if a chimpanzee were to sit at a typewriter long enough, it could write Shakespeare. Probably. It would also probably take a long time. But if that very same chimpanzee were to use this law when typing random words, it would most likely accomplish this very same thing in half of the time.</p>
+<p>Anyway, as one final note on this aside, <a href="https://i.imgur.com/ph800wI.png">here is the breakdown of all of the words on this page.</a> Pretty creepy, huh? </p>
+<p>Until next time.</p>
+<!----></div></section></div> <div><footer class="bg-black text-neutral-600 w-full h-[4em] flex flex-col items-center justify-center px-4 font-mono"><div class="flex gap-4 mt-1"><p class="text-sm">Made With Floppy Disks • ©2025 Brian Hill •</p> <!--[--><a href="https://github.com/TrojanPinata" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-lg hover:text-gray-400 transition-colors"><iconify-icon icon="mdi:github" class="svelte-upsgr"></iconify-icon></a><a href="https://www.linkedin.com/in/brian-hill-0082161a3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-lg hover:text-gray-400 transition-colors"><iconify-icon icon="mdi:linkedin" class="svelte-upsgr"></iconify-icon></a><a href="mailto:hillbr20@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email" class="text-lg hover:text-gray-400 transition-colors"><iconify-icon icon="mdi:email" class="svelte-upsgr"></iconify-icon></a><!--]--></div></footer></div><!----><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_e6u3ap = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.Dee_bdHB.js"),
+						import("../_app/immutable/entry/app.C2ahTJtZ.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,{type:"data",data:{meta:{title:"Zipf's Law",date:"2022-07-18"},content:"\u003Cp>This is going to be a different kind of page for this little personal site. I’m currently in the middle of a much larger project, but I was recently going over some abstract ways of sorting data for a different kind of project than I’ve ever done before, when I was reminded of a very strange natural law. In language, alphabets, physics, and natural distributions, there is sometimes, no, a lot of the time, a tendency for data to fall into what is called a Zipfian distribution, and thus Zipf’s Law. \u003C/p>\n\u003Cp>To explain in a somewhat digestible manner, these natural and even man-made concepts and tools will more likely than not fall into a close to perfect logarithmic distribution, where the most common item in a set is twice as likely to appear as the second most common, and three times as likely to appear as the third most, and so on and so forth. And this is a harsh generalization of the law. (\u003Ca href=\"https://en.wikipedia.org/wiki/Zipf%27s_law\">Wikipedia link so I don’t have to explain it all\u003C/a>) Just know that the number of instances of an item in a set of data follows a number n1(1/nr), where n1 is the most common item, and nr is the number at a given rank. To me, this is interesting as it is, but I am more interested in applying this. \u003C/p>\n\u003Cp>The first thing I thought to do was to break down large data sets like the using all of the information from Wikipedia or something. But I really don’t want to spend all of the time and energy trying to figure out a way to get every single Wikipedia page’s word breakdown and sort it all into a excel spreadsheet. That sounds… rough. But I did still want to use a larger piece of literature, so I chose Ulysses by Janice Joyce. Honestly, I have gotten about one fifth the way through this (it’s really tough), and I thought that instead of finishing it, why don’t I just take the break down and see if it satisfies the law? \u003C/p>\n\u003Cp>In order to do this, I decided to use a python script to break it into its individual words, clean them up, sort, and rank them. Which does in fact work. I will say this, however. If I were to do this again, I would use C or something faster. The script is on \u003Ca href=\"https://github.com/TrojanPinata/zipf\">github\u003C/a> if you want to check it out, but it is very slow, breaking this whole thing apart in 15 minutes. That’s mostly because I wrote sloppy code (I guess), but the way python preforms and the sheer amount of data to be sorted (263,346 words) made this slightly annoying. \u003C/p>\n\u003Cp>But in the end, my relatively simple code outputs some really interesting, but expected results. Here is the list of the \u003Ca href=\"https://en.wikipedia.org/wiki/Most_common_words_in_English\">top 50 most common words\u003C/a> and here is my \u003Ca href=\"https://i.imgur.com/Hy7Zogu.png\">output list\u003C/a>. Pretty similar, eh? In fact, it even aligns with the logarithmic principle Zipf’s law applies to. Here is the curve when plotted with Excel. \u003C/p>\n\u003Cimg src=\"https://i.imgur.com/bDfezKQ.png\" alt=\"Zipfian curve\" />\n\n\u003Cp>I find this really interesting in both the principle and how easy it was for me to get my own data. I wanted to see how professional sources stack up and I was planning to post all of the trials I ran, but in reality, the data is kind of boring. Its all the exact same thing, same rank, with a few outliers and different total word count. The most interesting thing I put through my script was my own \u003Ca href=\"https://i.imgur.com/tV8hCd9.png\">paper from high school\u003C/a>, and sure enough it had the exact same result. Overall, it’s kind of scary. There is the common saying that if a chimpanzee were to sit at a typewriter long enough, it could write Shakespeare. Probably. It would also probably take a long time. But if that very same chimpanzee were to use this law when typing random words, it would most likely accomplish this very same thing in half of the time.\u003C/p>\n\u003Cp>Anyway, as one final note on this aside, \u003Ca href=\"https://i.imgur.com/ph800wI.png\">here is the breakdown of all of the words on this page.\u003C/a> Pretty creepy, huh? \u003C/p>\n\u003Cp>Until next time.\u003C/p>\n"},uses:{params:["slug"]}}],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+Disallow: /media/
+
+User-agent: Bytespider
+Disallow: /
+
+Sitemap: https://brianchill.us/sitemap.xml

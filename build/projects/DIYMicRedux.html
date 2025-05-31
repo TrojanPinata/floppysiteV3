@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+	<script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/app.CuxvBB9u.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Footer.CgORz9JN.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/4.V2TXjpPM.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.Dee_bdHB.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BkPmQs92.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/2HRQVGUp.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.C2ahTJtZ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Bew-Z_3u.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DXAlC3_6.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/JMAyBti-.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.DGoemtwr.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DMVHMjpm.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.CtLGBnTZ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BdTIQDss.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects"><button class="fixed top-4 left-4 text-sm px-4 py-2 rounded hover:bg-cyan-100 transition">← Back</button></a> <div class="bg-neutral-100 font-mono px-4 py-12 min-h-screen"><section class="max-w-4xl mx-auto"><h1 class="text-4xl font-bold mb-2">DIY Microphone: Revisited</h1> <p class="text-sm text-gray-500 mb-6">2023-10-04</p> <div class="content space-y-6 text-base text-neutral-800 leading-relaxed"><!----><p>A long time ago, I published my first project to my <a href="https://github.com/TrojanPinata">Github</a> - the <a href="https://github.com/TrojanPinata/DIY-Mic">DIY Microphone project</a> - out of spite for the <a href="https://www.youtube.com/watch?v=LoQu3XXIayc">DIYPerks YouTube video</a> which claimed a good microphone could be built for less than $30. I think it was incredibly petty, though it did help me get into making, publishing projects, and communicating what I do in a way I think is very productive (now especially). I never made a page for it because it was getting a lot of attention and I didn&#39;t have a website at the time (nor the bandwidth to handle the influx of people), so my Github was fine. I considered the project a success and while it was not especially useful in my life, it was a fantastic project to bring up in technical conversations.</p>
+<p>Now, nearly two years later, I was looking through some old projects to cannibalize and I remembered this project. I didn&#39;t want to completely waste the project specific components that were on board as they took a while to procure, so I decided I wanted to try and make it work. I decided to overhaul the design of the internals and housing in order to significantly improve performance. There were a lot of flaws in the original design, so I chose to make less compromises and make this actually usable.</p>
+<img src="https://i.imgur.com/Rz5yYzq.jpg" alt="microphone box" />
+
+<p>The biggest flaw with the original design was separating the mic module from the amplifier and ADC assembly by connecting the sensitive module wires with a long and fragile cable. This was a bad move - especially when combined with the accessory components not being perfectly grounded within the housing. My shoddy brass mesh faraday cage left a lot to be desired and my soldering was primitive at best as I was just getting used to my tools. There were a lot of changes that I think were necessary to make and the solution to all of these issues was to literally just <i>put it in a normal microphone body.</i></p>
+<p>Now, I had what I would consider the worst dedicated microphone on the market, a BM-800, so I gutted it and worked out what I wanted to make. I had all of the components already, but I needed to somehow fit the giant 3D printed box with all of its contents into a tiny microphone body and smash a USB-C connector on it. Now, if you are reading this, you may have seen my other projects, more specifically the keyboard project I did during the Summer of 2022. I feel like I&#39;ve gotten pretty good with PCB design (or that is just my hubris), so I decided to make a custom PCB to fit the housing and make this project work.</p>
+<p>After a long wait for the PCBs and some soldering, heres the result: </p>
+<img src="https://i.imgur.com/Q5EVr53.jpg" alt="pcb next to housing" />
+
+<img src="https://i.imgur.com/JwMTfCq.jpg" alt="microphone open" />
+
+<img src="https://i.imgur.com/adiQimk.jpg" alt="completed microphone" />
+
+<p>This new generation of the microphone works significantly better and sounds way too good to be a USB microphone. The noise I used to get with the old version is gone and so is pretty much every issue. I’m really happy with this result. I was expecting there to be some crosstalk as I haven’t really designed audio equipment before, but that doesn’t seem to be the case.</p>
+<p>This is the last time I will work on this project. If this version of the microphone doesn’t work out, I’m just going to buy an audio interface and a nice XLR microphone. Sometimes you just need your equipment to work, and that is most of the reasons why I stopped using the original. I don’t want to have to fanagle with my microphone to talk to friends.</p>
+<p>I definitely still want to work on audio equipment – maybe even a guitar, pedal, or synth in the future, but this project is done.</p>
+<p>If you read my terrible write-up on the original project before and are now reading this, thank you for following my first project and its final iteration.</p>
+<p>And as always, until next time.</p>
+<!----></div></section></div> <div><footer class="bg-black text-neutral-600 w-full h-[4em] flex flex-col items-center justify-center px-4 font-mono"><div class="flex gap-4 mt-1"><p class="text-sm">Made With Floppy Disks • ©2025 Brian Hill •</p> <!--[--><a href="https://github.com/TrojanPinata" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-lg hover:text-gray-400 transition-colors"><iconify-icon icon="mdi:github" class="svelte-upsgr"></iconify-icon></a><a href="https://www.linkedin.com/in/brian-hill-0082161a3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-lg hover:text-gray-400 transition-colors"><iconify-icon icon="mdi:linkedin" class="svelte-upsgr"></iconify-icon></a><a href="mailto:hillbr20@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email" class="text-lg hover:text-gray-400 transition-colors"><iconify-icon icon="mdi:email" class="svelte-upsgr"></iconify-icon></a><!--]--></div></footer></div><!----><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_e6u3ap = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.Dee_bdHB.js"),
+						import("../_app/immutable/entry/app.C2ahTJtZ.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,{type:"data",data:{meta:{title:"DIY Microphone: Revisited",date:"2023-10-04"},content:"\u003Cp>A long time ago, I published my first project to my \u003Ca href=\"https://github.com/TrojanPinata\">Github\u003C/a> - the \u003Ca href=\"https://github.com/TrojanPinata/DIY-Mic\">DIY Microphone project\u003C/a> - out of spite for the \u003Ca href=\"https://www.youtube.com/watch?v=LoQu3XXIayc\">DIYPerks YouTube video\u003C/a> which claimed a good microphone could be built for less than $30. I think it was incredibly petty, though it did help me get into making, publishing projects, and communicating what I do in a way I think is very productive (now especially). I never made a page for it because it was getting a lot of attention and I didn&#39;t have a website at the time (nor the bandwidth to handle the influx of people), so my Github was fine. I considered the project a success and while it was not especially useful in my life, it was a fantastic project to bring up in technical conversations.\u003C/p>\n\u003Cp>Now, nearly two years later, I was looking through some old projects to cannibalize and I remembered this project. I didn&#39;t want to completely waste the project specific components that were on board as they took a while to procure, so I decided I wanted to try and make it work. I decided to overhaul the design of the internals and housing in order to significantly improve performance. There were a lot of flaws in the original design, so I chose to make less compromises and make this actually usable.\u003C/p>\n\u003Cimg src=\"https://i.imgur.com/Rz5yYzq.jpg\" alt=\"microphone box\" />\n\n\u003Cp>The biggest flaw with the original design was separating the mic module from the amplifier and ADC assembly by connecting the sensitive module wires with a long and fragile cable. This was a bad move - especially when combined with the accessory components not being perfectly grounded within the housing. My shoddy brass mesh faraday cage left a lot to be desired and my soldering was primitive at best as I was just getting used to my tools. There were a lot of changes that I think were necessary to make and the solution to all of these issues was to literally just \u003Ci>put it in a normal microphone body.\u003C/i>\u003C/p>\n\u003Cp>Now, I had what I would consider the worst dedicated microphone on the market, a BM-800, so I gutted it and worked out what I wanted to make. I had all of the components already, but I needed to somehow fit the giant 3D printed box with all of its contents into a tiny microphone body and smash a USB-C connector on it. Now, if you are reading this, you may have seen my other projects, more specifically the keyboard project I did during the Summer of 2022. I feel like I&#39;ve gotten pretty good with PCB design (or that is just my hubris), so I decided to make a custom PCB to fit the housing and make this project work.\u003C/p>\n\u003Cp>After a long wait for the PCBs and some soldering, heres the result: \u003C/p>\n\u003Cimg src=\"https://i.imgur.com/Q5EVr53.jpg\" alt=\"pcb next to housing\" />\n\n\u003Cimg src=\"https://i.imgur.com/JwMTfCq.jpg\" alt=\"microphone open\" />\n\n\u003Cimg src=\"https://i.imgur.com/adiQimk.jpg\" alt=\"completed microphone\" />\n\n\u003Cp>This new generation of the microphone works significantly better and sounds way too good to be a USB microphone. The noise I used to get with the old version is gone and so is pretty much every issue. I’m really happy with this result. I was expecting there to be some crosstalk as I haven’t really designed audio equipment before, but that doesn’t seem to be the case.\u003C/p>\n\u003Cp>This is the last time I will work on this project. If this version of the microphone doesn’t work out, I’m just going to buy an audio interface and a nice XLR microphone. Sometimes you just need your equipment to work, and that is most of the reasons why I stopped using the original. I don’t want to have to fanagle with my microphone to talk to friends.\u003C/p>\n\u003Cp>I definitely still want to work on audio equipment – maybe even a guitar, pedal, or synth in the future, but this project is done.\u003C/p>\n\u003Cp>If you read my terrible write-up on the original project before and are now reading this, thank you for following my first project and its final iteration.\u003C/p>\n\u003Cp>And as always, until next time.\u003C/p>\n"},uses:{params:["slug"]}}],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+	<script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/app.CuxvBB9u.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Footer.CgORz9JN.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/4.V2TXjpPM.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.Dee_bdHB.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BkPmQs92.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/2HRQVGUp.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.C2ahTJtZ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Bew-Z_3u.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DXAlC3_6.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/JMAyBti-.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.DGoemtwr.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DMVHMjpm.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.CtLGBnTZ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BdTIQDss.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects"><button class="fixed top-4 left-4 text-sm px-4 py-2 rounded hover:bg-cyan-100 transition">← Back</button></a> <div class="bg-neutral-100 font-mono px-4 py-12 min-h-screen"><section class="max-w-4xl mx-auto"><h1 class="text-4xl font-bold mb-2">Amen Break Machine</h1> <p class="text-sm text-gray-500 mb-6">2024-03-05</p> <div class="content space-y-6 text-base text-neutral-800 leading-relaxed"><!----><p>Let&#39;s start from the top. I wanted to make a device similar to the <a href="https://cromagnontech.blogspot.com/2018/04/the-yeah-woo-machine.html?m=1">Yeah! Woo! Machine</a> which has been ever present in my youtube recommended. This device uses two micro controllers to play a drum loop on one and allow for actionable buttons to deliver the fated Yeah!s and Woo!s. This is a very elegant solution, especially when put inside such a nice aluminum chassis with such good design. I would hope I could design something of that quality one day.</p>
+<p>Regardless, I did want to try my hand at something similar. As I am writing and developing this during my spring break, I thought I would try and knock this out in a week similar to my past spring break projects. This time, I decided I would try and make something more physical and similar to the YWM. I chose to use a <a href="https://www.hammfg.com/part/1590BB">1590BB</a> aluminum box, which have previously used when making guitar pedals. I find them extremely easy to work with and not horrible to look at. However, in this case, I decided on a design element before starting work and realized I had no way of implementing it with my available tools (for context, this is the synth slider we will discuss later and the tool I would need is a CNC router).</p>
+<p>At first, when I was conceptualizing what this should do, I was listening to a track from 1080 Snowboarding called <a href="https://www.youtube.com/watch?v=NQ70k4Zt-Nw">White Out</a> which features the <a href="https://en.wikipedia.org/wiki/Amen_break">Amen Break</a>. Now I am not going to go over the history of electronic music here because it is not my place, but this a extremely influential and highly sampled four bars of music. It is widely mixed and modified piece of music that I thought would be cool to be able to mix and match in a sort of drum machine style. Mix in the YWM and you can see where I got this idea from.</p>
+<img src="https://i.imgur.com/8MGpDfV.jpeg" alt="overdrive pedal i made" />
+
+<p>I am going to keep the complicated technical aspects of why I made certain decisions short to keep this palatable, but understand that I using micropython and a Raspberry Pi Pico to make this work. I using I2S to output the audio to a MAX98357 DAC/amp chip and in the package, I included a second DAC in case I wanted to use both I2S channels on the Pico (which I later would find out is impossible because of how micropython implemented PIO). The reason I did it this way is because I did not want to spend a month writing C code for this dumb project.</p>
+<img src="https://i.imgur.com/sP3LGRn.jpeg" alt="guts" />
+
+<p>And with that, let me explain all of the feature creep things that made it into the final design. As you can see below, the shell is 3D printed as I wanted to include a synth slider. This would be possible using the uasynchio micropython package but is <i>buggy</i> to say the least. A knob was included to control the tempo and two switches control the separate mute controls. Six buttons are on the face, one for each bar/instrument and one for each Yeah! and Woo!. A aux out and speaker are also included, but not isolated and two leds for status are located on the front.</p>
+<img src="https://i.imgur.com/HCTraJs.jpeg" alt="topside" />
+
+<p>With that, I don&#39;t think there is really much I want to go over. There were a lot of compromises with this project, but to be able to play audio one a microcontroller is such a large leap in technology. Here is a demo of the device with my shoddy code running.</p>
+<div class="aspect-video">
+   <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/taxZBTZs0io"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+   ></iframe>
+</div>
+
+<p>Until next time.</p>
+<!----></div></section></div> <div><footer class="bg-black text-neutral-600 w-full h-[4em] flex flex-col items-center justify-center px-4 font-mono"><div class="flex gap-4 mt-1"><p class="text-sm">Made With Floppy Disks • ©2025 Brian Hill •</p> <!--[--><a href="https://github.com/TrojanPinata" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-lg hover:text-gray-400 transition-colors"><iconify-icon icon="mdi:github" class="svelte-upsgr"></iconify-icon></a><a href="https://www.linkedin.com/in/brian-hill-0082161a3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-lg hover:text-gray-400 transition-colors"><iconify-icon icon="mdi:linkedin" class="svelte-upsgr"></iconify-icon></a><a href="mailto:hillbr20@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email" class="text-lg hover:text-gray-400 transition-colors"><iconify-icon icon="mdi:email" class="svelte-upsgr"></iconify-icon></a><!--]--></div></footer></div><!----><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_e6u3ap = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.Dee_bdHB.js"),
+						import("../_app/immutable/entry/app.C2ahTJtZ.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,{type:"data",data:{meta:{title:"Amen Break Machine",date:"2024-03-05"},content:"\u003Cp>Let&#39;s start from the top. I wanted to make a device similar to the \u003Ca href=\"https://cromagnontech.blogspot.com/2018/04/the-yeah-woo-machine.html?m=1\">Yeah! Woo! Machine\u003C/a> which has been ever present in my youtube recommended. This device uses two micro controllers to play a drum loop on one and allow for actionable buttons to deliver the fated Yeah!s and Woo!s. This is a very elegant solution, especially when put inside such a nice aluminum chassis with such good design. I would hope I could design something of that quality one day.\u003C/p>\n\u003Cp>Regardless, I did want to try my hand at something similar. As I am writing and developing this during my spring break, I thought I would try and knock this out in a week similar to my past spring break projects. This time, I decided I would try and make something more physical and similar to the YWM. I chose to use a \u003Ca href=\"https://www.hammfg.com/part/1590BB\">1590BB\u003C/a> aluminum box, which have previously used when making guitar pedals. I find them extremely easy to work with and not horrible to look at. However, in this case, I decided on a design element before starting work and realized I had no way of implementing it with my available tools (for context, this is the synth slider we will discuss later and the tool I would need is a CNC router).\u003C/p>\n\u003Cp>At first, when I was conceptualizing what this should do, I was listening to a track from 1080 Snowboarding called \u003Ca href=\"https://www.youtube.com/watch?v=NQ70k4Zt-Nw\">White Out\u003C/a> which features the \u003Ca href=\"https://en.wikipedia.org/wiki/Amen_break\">Amen Break\u003C/a>. Now I am not going to go over the history of electronic music here because it is not my place, but this a extremely influential and highly sampled four bars of music. It is widely mixed and modified piece of music that I thought would be cool to be able to mix and match in a sort of drum machine style. Mix in the YWM and you can see where I got this idea from.\u003C/p>\n\u003Cimg src=\"https://i.imgur.com/8MGpDfV.jpeg\" alt=\"overdrive pedal i made\" />\n\n\u003Cp>I am going to keep the complicated technical aspects of why I made certain decisions short to keep this palatable, but understand that I using micropython and a Raspberry Pi Pico to make this work. I using I2S to output the audio to a MAX98357 DAC/amp chip and in the package, I included a second DAC in case I wanted to use both I2S channels on the Pico (which I later would find out is impossible because of how micropython implemented PIO). The reason I did it this way is because I did not want to spend a month writing C code for this dumb project.\u003C/p>\n\u003Cimg src=\"https://i.imgur.com/sP3LGRn.jpeg\" alt=\"guts\" />\n\n\u003Cp>And with that, let me explain all of the feature creep things that made it into the final design. As you can see below, the shell is 3D printed as I wanted to include a synth slider. This would be possible using the uasynchio micropython package but is \u003Ci>buggy\u003C/i> to say the least. A knob was included to control the tempo and two switches control the separate mute controls. Six buttons are on the face, one for each bar/instrument and one for each Yeah! and Woo!. A aux out and speaker are also included, but not isolated and two leds for status are located on the front.\u003C/p>\n\u003Cimg src=\"https://i.imgur.com/HCTraJs.jpeg\" alt=\"topside\" />\n\n\u003Cp>With that, I don&#39;t think there is really much I want to go over. There were a lot of compromises with this project, but to be able to play audio one a microcontroller is such a large leap in technology. Here is a demo of the device with my shoddy code running.\u003C/p>\n\u003Cdiv class=\"aspect-video\">\n   \u003Ciframe\n      class=\"w-full h-full\"\n      src=\"https://www.youtube.com/embed/taxZBTZs0io\"\n      title=\"YouTube video player\"\n      frameborder=\"0\"\n      allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\"\n      allowfullscreen\n   >\u003C/iframe>\n\u003C/div>\n\n\u003Cp>Until next time.\u003C/p>\n"},uses:{params:["slug"]}}],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

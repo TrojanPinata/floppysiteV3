@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+	<script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link href="../_app/immutable/assets/app.CuxvBB9u.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/Footer.CgORz9JN.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/4.V2TXjpPM.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.Dee_bdHB.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BkPmQs92.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/2HRQVGUp.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.C2ahTJtZ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/Bew-Z_3u.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DXAlC3_6.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/JMAyBti-.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.DGoemtwr.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DMVHMjpm.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.CtLGBnTZ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BdTIQDss.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects"><button class="fixed top-4 left-4 text-sm px-4 py-2 rounded hover:bg-cyan-100 transition">← Back</button></a> <div class="bg-neutral-100 font-mono px-4 py-12 min-h-screen"><section class="max-w-4xl mx-auto"><h1 class="text-4xl font-bold mb-2">Making My Raspberry Pi into the Shape of a Wii</h1> <p class="text-sm text-gray-500 mb-6">2024-04-05</p> <div class="content space-y-6 text-base text-neutral-800 leading-relaxed"><!----><p>I have a couple of Raspberry Pis. This website was even started on a Raspberry Pi 3B+. If you read/watched my video on my Nintoaster project then you might be able to see where this is going.</p>
+<p>After I finished that project, I spent about three weeks with the Nintoaster, using it and playing mario over and over again. And I started to really like how easy it was to simply turn on and play a game. No home screen or anything. It&#39;s very elegant and reminded me of what I loved so much about the Gameboy. I really wanted to make something for myself which would do the same thing while preserving the ease of maintaining a large game library.</p>
+<p>When I ended up giving away the Nintoaster I felt a bit conflicted, and that&#39;s what spurred me to do this. The idea was to take a Raspberry Pi with <a href="https://retropie.org.uk/">RetroPie</a> and put it in the body of a Wii with a game selector. This would allow a similar press on and play attitude while giving it the versatility and customizabillity of a emulation system - and in the body of a Wii for looks.</p>
+<img src="https://i.imgur.com/yTD1N7v.jpeg" alt="Wiiman" />
+
+<p>So that&#39;s what I did. Most of this project was figuring out how to mount all of the I/O of a Pi onto the boy of a Wii with all of it&#39;s proprietary ports, but as you can see it all worked out. The main additions I made were the game selector switch in the memory card port and the addition of dedicated composite jacks. The whole system was able to be powered on five volts via a USB-C port and I even managed to get ethernet.</p>
+<img src="https://i.imgur.com/QURvRnk.jpeg" alt="top and rear" />
+
+<p>But the part I am proud of the most is actually none of that. I did write a short shell program to launch games via a some basic unix system commands, but even that was mid at best. The thing I am most proud of was designing a system to emulate the actual function and ports on the front of the Wii. There are four buttons, a SD card slot, and a LED on the front that I got to work with a microcontroller and some relays. I wanted the LED to light and work without the Pi being on, so the LED on the front will glow red until pressed, at which point it will close the relays and start the Pi and video subsystem.</p>
+<img src="https://i.imgur.com/IL1z4Yv.jpeg" alt="front" />
+
+<p>I should note that inside there is a HDMI splitter and AV converter to allow a user to display on both a CRT and LCD at the same time.</p>
+<p>Overall, I am proud of how this came out. I think this was very interesting and fun to build, but I will never use this sadly. I realized after living with this for a week or two that it wasn&#39;t what I got with the Nintoaster. I really wanted a different feeling from it. I think a better solution for me personally will be to buy and mod a Famicom, but as that sounds expensive I think I will wait until I have more time in the summer or something to do that.</p>
+<p>Until next time.</p>
+<img src="https://i.imgur.com/IrxfGe3.jpeg" alt="yikes" /><!----></div></section></div> <div><footer class="bg-black text-neutral-600 w-full h-[4em] flex flex-col items-center justify-center px-4 font-mono"><div class="flex gap-4 mt-1"><p class="text-sm">Made With Floppy Disks • ©2025 Brian Hill •</p> <!--[--><a href="https://github.com/TrojanPinata" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="text-lg hover:text-gray-400 transition-colors"><iconify-icon icon="mdi:github" class="svelte-upsgr"></iconify-icon></a><a href="https://www.linkedin.com/in/brian-hill-0082161a3/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="text-lg hover:text-gray-400 transition-colors"><iconify-icon icon="mdi:linkedin" class="svelte-upsgr"></iconify-icon></a><a href="mailto:hillbr20@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email" class="text-lg hover:text-gray-400 transition-colors"><iconify-icon icon="mdi:email" class="svelte-upsgr"></iconify-icon></a><!--]--></div></footer></div><!----><!----><!----><!----><!--]--> <!--[!--><!--]--><!--]-->
+			
+			<script>
+				{
+					__sveltekit_e6u3ap = {
+						base: new URL("..", location).pathname.slice(0, -1)
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("../_app/immutable/entry/start.Dee_bdHB.js"),
+						import("../_app/immutable/entry/app.C2ahTJtZ.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data: [null,{type:"data",data:{meta:{title:"Making My Raspberry Pi into the Shape of a Wii",date:"2024-04-05"},content:"\u003Cp>I have a couple of Raspberry Pis. This website was even started on a Raspberry Pi 3B+. If you read/watched my video on my Nintoaster project then you might be able to see where this is going.\u003C/p>\n\u003Cp>After I finished that project, I spent about three weeks with the Nintoaster, using it and playing mario over and over again. And I started to really like how easy it was to simply turn on and play a game. No home screen or anything. It&#39;s very elegant and reminded me of what I loved so much about the Gameboy. I really wanted to make something for myself which would do the same thing while preserving the ease of maintaining a large game library.\u003C/p>\n\u003Cp>When I ended up giving away the Nintoaster I felt a bit conflicted, and that&#39;s what spurred me to do this. The idea was to take a Raspberry Pi with \u003Ca href=\"https://retropie.org.uk/\">RetroPie\u003C/a> and put it in the body of a Wii with a game selector. This would allow a similar press on and play attitude while giving it the versatility and customizabillity of a emulation system - and in the body of a Wii for looks.\u003C/p>\n\u003Cimg src=\"https://i.imgur.com/yTD1N7v.jpeg\" alt=\"Wiiman\" />\n\n\u003Cp>So that&#39;s what I did. Most of this project was figuring out how to mount all of the I/O of a Pi onto the boy of a Wii with all of it&#39;s proprietary ports, but as you can see it all worked out. The main additions I made were the game selector switch in the memory card port and the addition of dedicated composite jacks. The whole system was able to be powered on five volts via a USB-C port and I even managed to get ethernet.\u003C/p>\n\u003Cimg src=\"https://i.imgur.com/QURvRnk.jpeg\" alt=\"top and rear\" />\n\n\u003Cp>But the part I am proud of the most is actually none of that. I did write a short shell program to launch games via a some basic unix system commands, but even that was mid at best. The thing I am most proud of was designing a system to emulate the actual function and ports on the front of the Wii. There are four buttons, a SD card slot, and a LED on the front that I got to work with a microcontroller and some relays. I wanted the LED to light and work without the Pi being on, so the LED on the front will glow red until pressed, at which point it will close the relays and start the Pi and video subsystem.\u003C/p>\n\u003Cimg src=\"https://i.imgur.com/IL1z4Yv.jpeg\" alt=\"front\" />\n\n\u003Cp>I should note that inside there is a HDMI splitter and AV converter to allow a user to display on both a CRT and LCD at the same time.\u003C/p>\n\u003Cp>Overall, I am proud of how this came out. I think this was very interesting and fun to build, but I will never use this sadly. I realized after living with this for a week or two that it wasn&#39;t what I got with the Nintoaster. I really wanted a different feeling from it. I think a better solution for me personally will be to buy and mod a Famicom, but as that sounds expensive I think I will wait until I have more time in the summer or something to do that.\u003C/p>\n\u003Cp>Until next time.\u003C/p>\n\u003Cimg src=\"https://i.imgur.com/IrxfGe3.jpeg\" alt=\"yikes\" />"},uses:{params:["slug"]}}],
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

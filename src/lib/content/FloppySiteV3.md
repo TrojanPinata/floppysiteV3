@@ -13,8 +13,8 @@ Thank you to all of you who have visited over the years – I see you on the Clo
 
 Here are the older versions of this site so you can see how things have changed:
 
-V2: <a href="/v2/index.html">brianchill.us/v2/index.html</a>
+V2: <a href="https://brianchill.us/v2/index.html">brianchill.us/v2/index.html</a>
 
-V1: <a href="/v2/old/index.html">brianchill.us/v2/old/index.html</a>
+V1: <a href="https://brianchill.us/v2/old/index.html">brianchill.us/v2/old/index.html</a>
 
 And as always, until next time.
