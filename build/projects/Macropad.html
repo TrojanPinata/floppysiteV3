@@ -9,17 +9,17 @@
 		<link href="../_app/immutable/assets/app.CuxvBB9u.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/Footer.CgORz9JN.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/4.V2TXjpPM.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.CvCWKRFM.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/BkPmQs92.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/2HRQVGUp.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.BFoT77dT.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/Bew-Z_3u.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DXAlC3_6.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/JMAyBti-.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.DGoemtwr.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DMVHMjpm.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.CtLGBnTZ.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/BdTIQDss.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
+		<link rel="modulepreload" href="../_app/immutable/entry/start.DrXY-vhU.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/DlMPQ7kW.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CucvcyUy.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CQ4v2ukt.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.4NbHf8Tf.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CWj6FrbW.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/YaY44Lv3.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.DkchpZiJ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BESi_VYH.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.CvsibAwl.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CPJJShKr.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects"><button class="fixed top-4 left-4 text-sm px-4 py-2 rounded hover:bg-cyan-100 transition">← Back</button></a> <div class="bg-neutral-100 font-mono px-4 py-12 min-h-screen"><section class="max-w-4xl mx-auto"><h1 class="text-4xl font-bold mb-2">Pico-based 12-key Macropad</h1> <p class="text-sm text-gray-500 mb-6">2024-08-28</p> <div class="content space-y-6 text-base text-neutral-800 leading-relaxed"><!----><p>Hear me out: what if there was a reasonably easy to follow guide and kit for building keyboards with a low barrier of entry which anyone can build with the right materials and a desire to learn?</p>
@@ -38,21 +38,22 @@
 			
 			<script>
 				{
-					__sveltekit_1rh9b14 = {
+					__sveltekit_1lrgj5g = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.CvCWKRFM.js"),
-						import("../_app/immutable/entry/app.BFoT77dT.js")
+						import("../_app/immutable/entry/start.DrXY-vhU.js"),
+						import("../_app/immutable/entry/app.4NbHf8Tf.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
 							data: [null,{type:"data",data:{meta:{title:"Pico-based 12-key Macropad",date:"2024-08-28"},content:"\u003Cp>Hear me out: what if there was a reasonably easy to follow guide and kit for building keyboards with a low barrier of entry which anyone can build with the right materials and a desire to learn?\u003C/p>\n\u003Cimg src=\"https://github.com/TrojanPinata/Macropad-Pico/blob/main/images/DSC_0714.JPG?raw=true\" alt=\"a pretty nice photo\" />\n\n\u003Cp>A few months ago I developed a \u003Ca href=\"https://github.com/TrojanPinata/Pico\">custom Raspberry Pi Pico\u003C/a> with the intention of learning how to develop boards with microcontrollers and have them manufactured with PCBA. The main changes I made were for quality of life with USB-C, a reset button, and black soldermask (which is really just me being annoyed the pico on the Model-K wasn&#39;t black). This was a wild success and left me with ~30 Pi Picos which I gave to a few of my friends and use for development. Safe to say I will likely never buy another Pico.  One of my friends wanted to make a keyboard out of his and while I think that is a great I idea, it is really difficult to manufacture keyboards with traditional cases using 3D printers as the bed plate is usually too small, or extremely costly if shipped out to another company. Once I saw he wanted to make a macropad and showed me some of the things he was looking at, I started looking into what guides people follow online. To put it briefly, I was not happy.\u003C/p>\n\u003Cp>Most of the guides online don&#39;t really make anything simple. They expect the builder to have a lot of experience soldering and manufacturing which creates a sort of barrier for those who just want to make something cool but don&#39;t have the skills. I really dislike that most of these guides don&#39;t use traditional layouts which miss things from diodes to USB-C, relying on bad placement and software fixes to fix them. What bothers me the most is the unnecessary reliance on using custom code. I don&#39;t think that is bad in a vacuum, but the people wanting to build these want to use tools and software they would actually be using to develop real keyboards (QMK, KMK, etc.).\u003C/p>\n\u003Cp>Because of these things, I wanted to design a simple 12-key macropad which represents the F13-F24 keys and can be put together with a bit of soldering skill and access to any volume 3D printer. As pictured, the switchplate and case can both be printed on a Prusa Mini and put together using glue or M2 screws. The PCB can be bought from JLC for ~$12 or handwired, using the schematics provided in KiCad. I wanted to make the entire system accessable for anyone with different levels of access without requiring them to make modifications to my designs.\u003C/p>\n\u003Cp>I&#39;ve listed the materials and a short guide on \u003Ca href=\"https://github.com/TrojanPinata/Macropad-Pico\">GitHub\u003C/a> as well as a \u003Ca href=\"https://youtu.be/6qyvscmvLPk\">short video guide\u003C/a>. I hope this will make getting into the manufacturing side of the keyboard hobby easier, as well as act as a introduction for some people into soldering and possibly CAD through modifying my designs for further customization.\u003C/p>\n\u003Cimg src=\"https://i.imgur.com/e50AqeJ.png\" alt=\"Render\" />\n\n\u003Cimg src=\"https://github.com/TrojanPinata/Macropad-Pico/blob/main/images/DSC_0733.JPG?raw=true\" alt=\"on desk\" />\n\n\u003Cp>That&#39;s it. Until next time.\u003C/p>\n"},uses:{params:["slug"]}}],
 							form: null,
-							error: null
+							error: null,
+							remote: null
 						});
 					});
 				}

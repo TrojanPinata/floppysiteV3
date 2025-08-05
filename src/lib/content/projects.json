@@ -154,5 +154,11 @@
       "slug": "FloppySiteV3",
       "image": "https://i.imgur.com/XtwApXp.png",
       "title": "Rebuilding This Website in Svelte"
+   },
+   {
+      "date": "2025-08-04",
+      "slug": "Skat",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Bundesarchiv_Bild_183-F0528-0026-001%2C_Erfurt%2C_Skatspieler_im_Park.jpg",
+      "title": "Basic Strategy in Skat"
    }
 ]
