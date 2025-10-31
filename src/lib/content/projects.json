@@ -166,5 +166,11 @@
       "slug": "ECU",
       "image": "https://i.imgur.com/RiwCIPs.jpeg",
       "title": "The Lowest Displacement EFI Engine"
+   },
+   {
+      "date": "2025-10-30",
+      "slug": "Compilers",
+      "image": "https://i.imgur.com/X1bLctE.png",
+      "title": "Comparing C Compilers, Assembly, and Rust on ARM"
    }
 ]
