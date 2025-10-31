@@ -1,9 +1,9 @@
 ---
 title: "Rebuilding This Website in Svelte"
-date: "2025/05/30"
+date: "2025-05-30"
 ---
 
-In 2022, just over three years ago, I started my FloppySite project with the intention of displaying all of the stupid projects I have worked on up to that point. Three years feels like far too little time for how much I have done since then. I wasn't even halfway through college at that point, yet since then, I have amassed 5 times the amount I started with. Realistically, I don’t even know where I found the time to do all of those. 
+In 2022, just over three years ago, I started my FloppySite project with the intention of displaying all of the stupid projects I have worked on up to that point. Three years feels like far too little time for how much I have done since then. I wasn't even halfway through college at that point, yet since then, I have amassed 5 times as many projects from where I started. Realistically, I don’t even know where I found the time to do all of those. 
 
 As of the writing of this article, I just graduated college and am about to start working. When I wrote the version of this site in React almost two and a half years ago as an update, I was doing it with the intention of looking for jobs, and I always said I would rewrite everything to be better when I graduated. ‘Better’ was always subjective, but in my head, it was more cohesive, consistent, cleaner. So of course, in the slight break afforded to me, I did just that. 
 
