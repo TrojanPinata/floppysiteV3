@@ -1,0 +1,55 @@
+---
+title: "Making a Camera From Scratch"
+date: "2025-11-17"
+--- 
+
+Last year, I wrote a page on here about recreating a product called the <a href="https://brianchill.us/projects/Dispolens">dispolens</a>, a lens which makes photos look like they were captured with a disposable camera. As should be obvious by the completion of that project, I am really interested in cameras. I take a lot of photos digitally, and most people know me for shooting film and processing film myself. Photography is something I have been doing since I was in my early teens, and continuing it now that I have graduated is a given. 
+
+A longstanding dream of mine has always been to create a camera. I’ve always thought it would be cool to take a picture on something fully designed myself. The combination of doing electronics projects and taking photos has always been a sort of holy grail. The biggest setbacks to actually do this are sourcing a usable quality sensor and getting the electronics made. Currently, it is not really possible to design a fully custom PCB due to tariffs and sensor availability, but I thought I would still give it a shot. 
+
+Recently, <a href="https://en.wikipedia.org/wiki/Raspberry_Pi">Raspberry Pi</a> has released a new version of their <a href="https://en.wikipedia.org/wiki/Raspberry_Pi#Cameras">small format cameras</a> which is less of a camera, and more of a sensor. The <a href="https://www.adafruit.com/product/4561">Pi Camera High Quality</a> is a 12MP sensor made by Sony which can just kind of… connect to a <a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/">Pi Zero 2W</a>. This makes it really easy to connect with their product ecosystem and allows for photos to be taken as long as light is focused in such a way that it falls on the sensor in focus. As we learned with the dispolens project, lens output an image with a specific flange focal distance in mind, so as long as a lens and mounting body is designed with a gap to allocate for that, technically, any lens should be able to work with this bare sensor. 
+
+<img src="https://i.imgur.com/hNf9Bma.jpeg" alt="high quality pi camera v3" />
+
+So there it is. The project this time around will be to make a camera body from scratch which can use nearly any lens model and can be made without needing a custom circuit board. To begin, there are essentially only five things a camera needs other than the lens, sensor, and processor: a SD card for storing photos, a knob for changing the shutter speed/exposure speed, a battery to be able to carry the camera without a teacher, and a button to capture the photo. When you realize that the SD card is already contained in the Pi, the battery is a given (and easy if you’ve seen the blimp page on here), and recognize that the knob can also be a shutter – this entire thing becomes pretty trivial with some 3D printing and smart software design.
+
+To actually accomplish building this, the first step is to design a body and lens system which is modular. This allows for essentially ‘adapters’ for each lens type and allows the body to remain the same while each mount and <a href="https://en.wikipedia.org/wiki/Flange_focal_distance">flange distance</a> changes. Smack on a top and bottom, sprinkle in some heatset inserts, and add a power switch and you’re off to the races. Of course it’s not really that easy, but explaining CAD choices through text is rough, so give me a break. 
+
+<img src="https://i.imgur.com/ufE7uMO.png" alt="cad assembly" />
+
+The one thing I should note is the external nature of the sensor ribbon cable on the final product. I usually like to go somewhat in order, but this is kind of an exception. The <a href="https://www.adafruit.com/product/5211">FPC cable</a> the Pi Cameras use does not like to be bent. I designed this nice pathway into the bottom housing and bottom lid, but no amount of shifting it seemed to make it fit, and this solution – while not elegant – was effective and works consistently. 
+
+I should also note the display, as this is something pretty necessary to the entire design. The display was originally not a part I cared for, and was added on at the end. But after some thinking, I added it because I hoped to extract at least some value from it. It’s only <a href="https://www.adafruit.com/product/358">160x128 px</a>, but I found that when taking photos and using it as a viewfinder, it was really effective at showing the focus, even if the display was so small. Helping focus and being able to display the shot information was extremely important and I think that while small, it is essentially necessary for any camera without a proper viewfinder. 
+
+Taking all of these things into account and putting it all together, here is the final result.
+
+<img src="https://i.imgur.com/abRcbNT.jpeg" alt="picture of the final product" />
+
+The usage at first was… rough to say the least. The software was not perfectly responsive, but after some tuning and a obnoxious level of git commits, the final product is something I am proud of. I even added a delay so you can see a preview of the shot you just took as if it was a real camera. You can’t browse all of your photos on the display (why would you want to when they are 160x128 :| ) knobs only like to change values in one direction, but nearly every other system works and that brings us to the most important part: how it actually feels as a camera.
+
+With many of my other projects there is a hard line that makes it really easy to tell if a result is a success or not. With keyboards it’s simple: does it work like a keyboard does? Can you type on it? And the answer is usually always yes, and I think those are nearly always good products. With the engine project it’s simple: does it run? If the ergonomics suck, well that’s fine. It was never meant to run on a actual bike or anything. But this is a bit different. A camera can still be a camera even if it has poor ergonomics. Already, if I can take a single picture, it is a success. But will I feel like it is a success if the pictures aren’t good?
+
+Fortunately for us, the pictures are good, but there is some important context you need to know before you see them to understand the limitations of the design and the improvements that could be made.
+
+The first thing (and what I think is most important) is the size of the sensor. I will not go into too much detail about <a href="https://learn.adafruit.com/raspberry-pi-hq-camera-lenses/crop-factor">crop factors</a> on digital camera sensors, but what you need to know is that a 35mm frame is considered 1x crop. APS-C sensors are 1.5x crop. This means that every lens focal distance is essentially 1.5x their spec. A 50mm lens is 50mm x 1.5 and has a focal distance of 70mm. I have a lot to say on this topic but I will resist, as I could write pages about how dumb this is in the modern day. The Pi sensor has a crop factor of 5.5x. This means a 50mm lens has the equivalent focal distance of 275mm. This is what that looks like for comparison.
+
+<img src="https://i.imgur.com/gcKHIBj.jpeg" alt="crop comparison" />
+
+Some lenses are designed for high crop factors, but most are not, and this is simply a limitation of the lens design and existing camera technologies. This also means that close range things are not really possible with traditional lenses and you need to have a steady hand (seriously, more than half of all photos come out blurry even with a ton of light. The high noise ratio makes high ISOs impractical and apertures need to be slow for easier focusing, so low shutter speed is needed, and that means everything needs to be stiller than humans can normally do.). Regardless, these photos still came out good. That is partially for the second reason behind this, which is the photo output and control built into the code. I took great care to ensure the photos would output <a href="https://en.wikipedia.org/wiki/Digital_Negative">Digital Negatives (DNG)</a> files as well as traditional JPGs to ensure the best quality and output for the sensor. This means that while there are many compromises I had to make with the image processing pipeline, the outputs should come out looking great.
+
+Without further ado:
+
+<img src="https://i.imgur.com/7uYiVkp.png" alt="molly" />
+
+<img src="https://i.imgur.com/RpLfvbJ.jpeg" alt="shed outdoors" />
+
+<img src="https://i.imgur.com/dr7Pf9u.jpeg" alt="album w/ colors" />
+
+<img src="https://i.imgur.com/rqmP1Cx.jpeg" alt="rx-7 closeup" />
+
+
+These are just some of my favorites with a 50mm lens. The flange focal distance is slightly off, to the point that the dispolens doesn’t work without being slightly blurry, but overall, most lenses perform well. I found that my Nikon 50mm series E lens was the best, with the runner up being my 35mm Pentax SMC M52. You can also make this think into a telescope by throwing on a 300mm lens (1650mm adjusted), though focusing is nearly impossible. 
+
+Overall, I would say this project has been a success. But you can be the judge. You see the result all the same as me. While shooting is one thing, the captures show a result that is on par with some bespoke cameras. One day I will add my portfolio of photos to this site and hopefully a truly custom camera.
+
+Until next time.

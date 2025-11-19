@@ -1,0 +1,26 @@
+---
+title: "Black Mold: A Theoretical Malware Payload"
+date: "2025-10-31"
+---
+
+Before I begin, I should make it clear that this has been tested on my own VM, and I do not condone this concept or any code which could be similar to the ideas use outside of a research setting. The purpose of this is to demonstrate how a payload of this kind would work and the differences in effects it would have when compared to traditional wipers or ransomware, and will not dive into actually getting it onto a system. I will also not be providing any scripts I used while researching this, as I am not a security researcher and this was something I mostly did as a thought experiment against myself.
+
+This idea came about when I did a security analysis against my own system and ask a very simple question: What would be the most devastating attack that could be done to me? I then figured out the answer to that, made some changes to my security model and went about my day. Later that night I then asked myself again: What would be the most devastating attack to someone not as security minded which would not require deep access and be extremely difficult to recover from. I asked this because I find that most malware requires elevated privileges, and I really wanted to know what kind of malicious program could exist which could run exclusively at the user level and cause damage which is irreversible by a normal person who takes backups regularly. 
+
+Now, this means a couple of things. Notably, the software needs to be undetectable by a normal user and the system – in other words, doing something the system would normally do or can do. And with that, the threat model is actually pretty simple. The simplest way to completely break someones system is not to target the system itself, but is to do the thing the same thing all of the rest of these do: target a user’s personal files.
+
+“Wow that’s real novel,” I hear you typing. But it really is that simple. The real question is how we make it undetectable. The method I came up with is pretty simple, and is actually just deleting the least recently used file from disk every 5 minutes (variable by the number of files in the user’s documents/pictures directories). This could be done in another way by corrupting these files, but regardless, the idea of slowly rotting away at a user’s personal files is what I found to be the most effective.
+
+Sure, deleting everything on a drive or encrypting everything is effective, but if you have a backup, this is thwarted to a large extent. What if you could corrupt the backups before the user notices? Nobody keeps more than a couple of backups – especially with storage being so expensive. After a couple of backup cycles, there is a really low chance that file is recoverable. Paired with the fact that the longer the system is on, the more damage occurs, this threat seems to specifically target people everywhere from your grandma to powerusers who have a million files on disk.
+
+But reader, this is diabolical. I think this approach is extremely evil. The least recently used files on a typical user’s system are memories. Old photos, documents, music. Deleting these are not usually noticed until someone wants to relive them. This approach rots away at a person’s memories before they have a chance to act and reduces the chance of recovery by rotting the backups as well. If you have thousands of files, you would barely notice the effects. A person with no idea this is occuring could go weeks or moths before noticing, and by that point it's too late. 
+
+I made this approach because it is (was, this scared me so bad I have so many more backups now) the most effective method against *me*. This is like computer dementia. It’s effective against people with a lot of files and have a lot of things on their systems, and older people who the slow file deletion will gaslight them into thinking their memories never existed in the first place. What’s worse is that this is actually a single line of powershell/bash script and can be scheduled by a self registering script or compromised program. It doesn’t show up in task manager and runs silently depending on implementation. 
+
+Sure, protection against this kind of threat is simple, but your system would not know this is a threat. Plenty of benign scripts do this everyday and if you are not 100% vigilant or normally complacent, then this will target you not where you initially would expect, but where it hurts most. This may not be practical for a traditional script kiddy who wants credit card information, but for a psychopath with a desire to slowly delete photos of your parents or kids right out from under you?
+
+A piece of malicious code which can do this is not scary in the traditional sense of malware, it is scary because it is much quieter and more threatening even to someone who backs up their stuff frequently. It targets where it hurts most, and is silent in a much more nefarious way. 
+
+Enjoy the thought your computer could have black mold running on it.
+
+Until next time.

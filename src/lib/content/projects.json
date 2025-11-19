@@ -172,5 +172,11 @@
       "slug": "Compilers",
       "image": "https://i.imgur.com/X1bLctE.png",
       "title": "Comparing C Compilers, Assembly, and Rust on ARM"
+   },
+   {
+      "date": "2025-11-17",
+      "slug": "Camera",
+      "image": "https://i.imgur.com/abRcbNT.jpeg",
+      "title": "Making a Camera From Scratch"
    }
 ]
