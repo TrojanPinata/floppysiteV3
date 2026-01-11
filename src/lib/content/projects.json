@@ -178,5 +178,11 @@
       "slug": "Camera",
       "image": "https://i.imgur.com/abRcbNT.jpeg",
       "title": "Making a Camera From Scratch"
+   },
+   {
+      "date": "2026-01-10",
+      "slug": "Wikipedia",
+      "image": "https://i.imgur.com/txfbCxa.png",
+      "title": "Graphing Wikipedia"
    }
 ]
