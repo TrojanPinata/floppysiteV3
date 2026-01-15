@@ -47,22 +47,43 @@ Our autonomous routine didn’t really change for the competition, though that w
 
 How it works is that each game is 30 minutes, with 30-minute half time at the halfway mark. The game is divided up into 30 second manual control portions and 4 minute 30 second autonomous portions. Our autonomous skill was lacking, but we came alive in manual mode.
 
-<div className="Youtube">
-   <Youtube videoId="BUBwnL6tfcI" opts={opts} />   
+<div class="aspect-video">
+   <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/BUBwnL6tfcI"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+   ></iframe>
 </div>
 
 DTR has a rule against popping other blimps. But there are no rules about push or locking yourself to other people’s blimps. Our primary goal instantly became to fly into other blimps to knock them off center, throw off their autonomous system, and either hit another blimp or get stuck on them to prevent them from moving. Our autonomous routine would then push them into the corner or ceiling and prevent them from scoring – or even playing the game at all. This was extremely successful and while we did have some hiccups (getting stuck in the wall due to some hooks we added to maximize the possibility of getting stuck on opponents), we were really effective at our job. Our blimp was also really flexible, allowing us to make on the fly changes to code and design when needed. We changed our role at one point, adding a net to score with and spear (that don’t pop things) to run counter-defensive maneuvers. I think the reason we were so successful was due to the rigid frame allowing us to hit opponents without much damage to ourselves and high power motors which were able to overpower opponents twice as big. In the words of a professor in my department, “Force equals mass times speed, so just go really fast.” 
 
-<div className="Youtube">
-   <Youtube videoId="ug0XbLQnEEA" opts={opts} />   
+<div class="aspect-video">
+   <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/ug0XbLQnEEA"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+   ></iframe>
 </div>
 
 <img src="https://i.imgur.com/yYRnHmV.jpeg" alt="blimp doing its job by pinning enemy agent" />
 
 Overall, we ended third. Another school more focused on winning beat us in our last match. But we were still really successful. In fact, we weren’t done, we still needed to prove that this whole system was doing unique motion. My school has a Optitrack system – one of those big motion capture system that they use to do movies – and we were able to get in to record our blimps movements. We recorded a bunch of unconventional moves and processed them with Matlab into datasets and then into animations. As a final result, we were able to confirm that yes, our blimp is able to do weird movements (shocker) but also gathered data on why and exactly how.
 
-<div className="Youtube">
-   <Youtube videoId="uNrrsKCDGyw" opts={opts} />   
+<div class="aspect-video">
+   <iframe
+      class="w-full h-full"
+      src="https://www.youtube.com/embed/uNrrsKCDGyw"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+   ></iframe>
 </div>
 
 I am really proud of this project. We placed well, proved our thesis, and preformed on a large stage where we realistically shouldn’t have been. We even presented this whole project to our entire department and were runners-up for an award. I am so happy I can show off this project as it is entirely unique to everything else that I do. It was intense, we put a lot of hours into it – more then I think most senior design groups do – and I could not be happier with the result. I hope you – the reader – can see what I see in this. Thank you to everyone who worked with me on this.
