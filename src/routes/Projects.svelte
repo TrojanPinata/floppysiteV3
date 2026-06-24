@@ -20,7 +20,7 @@
 </script>
 
 <div class="mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
-	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-30">
+	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 py-6 sm:py-10 md:py-16">
   		{#each latest as project}
     		<a href={`/projects/${project.slug}`} class="rounded-xl shadow-md overflow-hidden bg-white hover:shadow-lg transition duration-200">
       	<img src={project.image} alt={project.title} class="w-full h-64 sm:h-48 md:h-64 lg:h-64 2xl:h-82 object-cover rounded-xl"/>

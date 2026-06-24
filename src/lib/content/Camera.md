@@ -48,7 +48,7 @@ Without further ado:
 <img src="https://i.imgur.com/rqmP1Cx.jpeg" alt="rx-7 closeup" />
 
 
-These are just some of my favorites with a 50mm lens. The flange focal distance is slightly off, to the point that the dispolens doesn’t work without being slightly blurry, but overall, most lenses perform well. I found that my Nikon 50mm series E lens was the best, with the runner up being my 35mm Pentax SMC M52. You can also make this think into a telescope by throwing on a 300mm lens (1650mm adjusted), though focusing is nearly impossible. 
+These are just some of my favorites with a 50mm lens. The flange focal distance is slightly off, to the point that the dispolens doesn’t work without being slightly blurry, but overall, most lenses perform well. I found that my Nikon 50mm series E lens was the best, with the runner up being my 35mm Pentax SMC M52. You can also make this thing into a telescope by throwing on a 300mm lens (1650mm adjusted), though focusing is nearly impossible. 
 
 Overall, I would say this project has been a success. But you can be the judge. You see the result all the same as me. While shooting is one thing, the captures show a result that is on par with some bespoke cameras. One day I will add my portfolio of photos to this site and hopefully a truly custom camera.
 

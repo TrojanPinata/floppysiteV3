@@ -12,8 +12,8 @@
    </button>
 </a>
 
-<div class="mx-auto px-12">
-	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-30">
+<div class="mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 py-6 sm:py-10 md:py-16">
 
       <!-- Cool intro box that just says 'Projects' -->
       <div class="rounded-xl border-2 border-dashed border-gray-400 flex items-center justify-center text-center hover:bg-gray-50 transition duration-200">
