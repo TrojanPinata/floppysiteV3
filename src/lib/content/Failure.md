@@ -3,8 +3,6 @@ title: "A Lesson in Failure"
 date: "2026-03-28"
 ---
 
-<a href=""></a>
-
 I will begin by saying this project was not a success. The events of this story started in September 2025 and completely burnt me out on any and all projects to the point that I am only now finding the motivation to do these kinds of things again. 
 
 A while back, I made the <a href="https://brianchill.us/projects/TinyKeeb">TinyKeeb</a> for a friend and while I was designing it, I found the process to be really fun and unique. The final product was also pretty well built, but my biggest complaint was that it was 3d printed, and by extension there is a upper limit to how good the final result could look. I tried pretty hard to sand and clean up the one I made for them, but I always felt that I could make it significantly better if I invested into optimizing the design for production at scale.
