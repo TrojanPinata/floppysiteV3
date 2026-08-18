@@ -5,12 +5,17 @@
     	{
       	name: 'GitHub',
       	href: 'https://github.com/TrojanPinata',
-      	icon: 'mdi:github'
+      	icon: 'simple-icons:github'
+    	},
+		{
+      	name: 'Codeberg',
+      	href: 'https://codeberg.org/Trojan_Pinata',
+      	icon: 'simple-icons:codeberg'
     	},
     	{
       	name: 'LinkedIn',
       	href: 'https://www.linkedin.com/in/brian-hill-0082161a3/',
-      	icon: 'mdi:linkedin'
+      	icon: 'simple-icons:linkedin'
     	},
     	{
       	name: 'Email',
@@ -23,8 +28,8 @@
 <div>
 	<footer class="bg-black text-neutral-600 w-full h-[4em] flex flex-col items-center justify-center px-4 font-mono">
 		<div class="flex gap-4 mt-1">
-			<p class="text-sm">Made With Floppy Disks • ©2025 Brian Hill •</p>
-			{#each icons as { name, href, icon }}
+			<p class="text-sm">Made With Floppy Disks • ©2022-2026 Brian Hill •</p>
+			{#each icons as { name, href, icon } (name)}
 				<a href={href} target="_blank" rel="noopener noreferrer" aria-label={name} class="text-lg hover:text-gray-400 transition-colors">
 					<iconify-icon icon={icon}></iconify-icon>
 				</a>

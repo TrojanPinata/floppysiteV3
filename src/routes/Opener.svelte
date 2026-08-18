@@ -1,6 +1,29 @@
 <script lang="ts">
 	import '../app.css';
    import { typewriter_header } from '$lib/typewriter.js';
+
+   const icons = [
+    	{
+      	name: 'GitHub',
+      	href: 'https://github.com/TrojanPinata',
+      	icon: 'simple-icons:github'
+    	},
+		{
+      	name: 'Codeberg',
+      	href: 'https://codeberg.org/Trojan_Pinata',
+      	icon: 'simple-icons:codeberg'
+    	},
+    	{
+      	name: 'LinkedIn',
+      	href: 'https://www.linkedin.com/in/brian-hill-0082161a3/',
+      	icon: 'simple-icons:linkedin'
+    	},
+    	{
+      	name: 'Email',
+      	href: 'mailto:hillbr20@gmail.com',
+      	icon: 'mdi:email'
+    	}
+  	];
 </script>
 
 <div>
@@ -12,6 +35,13 @@
                This is my personal website written in Svelte and is the third iteration of my FloppySite project, a website which was made to run off of a floppy disk.
             </p>
             <p>All of the projects I have done are below.</p>
+            <div class="flex justify-center gap-4 mt-4">
+               {#each icons as { name, href, icon } (name)}
+				      <a href={href} target="_blank" rel="noopener noreferrer" aria-label={name} class="text-lg text-neutral-400 hover:text-black transition-colors">
+					      <iconify-icon icon={icon}></iconify-icon>
+				      </a>
+               {/each}
+            </div>
          </div>
          
       </div>
