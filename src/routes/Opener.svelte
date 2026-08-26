@@ -31,7 +31,7 @@
    <ThemeButton />
 	<section class="bg-neutral-100 dark:bg-neutral-900 transition-colors h-screen flex items-center justify-center">
       <div class="text-center">
-         <h1 use:typewriter_header={{ speed: 50 }} class="typewriter-header text-neutral-950 dark:text-neutral-100 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-mono"><!-- i know what i'm doing --></h1>
+         <h1 use:typewriter_header={{ speed: 50 }} class="typewriter-header text-neutral-950 dark:text-neutral-100 transition-colors text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-mono"><!-- i know what i'm doing --></h1>
          <div class="text-base text-neutral-950 dark:text-neutral-100 transition-colors sm:text-lg md:text-xl lg:text-2xl font-mono relative w-4/5 sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto mt-2">
             <p>
                This is my personal website written in Svelte and is the third iteration of my FloppySite project, a website which was made to run off of a floppy disk.
