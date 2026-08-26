@@ -5,24 +5,31 @@
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+		(function() {
+			const match = document.cookie.match(/(^| )theme=([^;]+)/);
+			const theme = match ? match[2] : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+			document.documentElement.classList.toggle('dark', theme === 'dark');
+		})();
+		</script>
 		
-		<link href="../_app/immutable/assets/app.CpmAKjzW.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/app.C5nA8v2V.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/Footer.CgORz9JN.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/4.Bup8knbq.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.CImwo0S3.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DqZeMT_l.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/BmimBzjD.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/QMxIJtnF.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.xA3AlP71.js">
+		<link href="../_app/immutable/assets/4.B6OvQAof.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.k6gd6nic.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BJ7O5iy2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CUwnD3Pt.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BiF7o3Us.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/CWj6FrbW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/QD2w4APO.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CZmG_RZY.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/COhMKUKa.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.pBlMG3BA.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/CiZq0IWe.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
+		<link rel="modulepreload" href="../_app/immutable/chunks/B4mHgaPJ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BKQ4J44-.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.B41afAGw.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CNSYk7nF.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.Cak2yUTY.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BGBUrwCb.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects"><button class="fixed top-4 left-4 text-sm px-4 py-2 rounded hover:bg-cyan-100 transition">← Back</button></a> <div class="bg-neutral-100 font-mono px-4 py-12 min-h-screen"><section class="max-w-4xl mx-auto"><h1 class="text-4xl font-bold mb-2">Basic Strategy in Skat</h1> <p class="text-sm text-gray-500 mb-6">2025-08-04</p> <div class="content space-y-6 text-base text-neutral-800 leading-relaxed"><!----><p>In Blackjack, there is something called <a href="https://www.blackjackapprenticeship.com/blackjack-strategy-charts/">basic strategy</a>. It is, as described by the name, a set of basic rules a player can use to get themselves the best odds possible without cheating or card counting. Basic strategy is best known in Blackjack, but it also takes other forms in games such as Poker, Craps (in a form), and realistically any other card game. It is important as by outlining the most standard and probably way to play the game, a player can have confidence that the game is essentially all luck as there is nothing else they can reasonably do to win. </p>
+		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects" class="svelte-1i0rqxg"><button class="fixed top-4 left-4 sm:text-sm md:text-sm lg:text-sm px-4 py-2 rounded hover:text-cyan-400 dark:hover:text-fuchsia-400 text-neutral-900 dark:text-neutral-100 transition svelte-1i0rqxg">← Back</button></a> <button class="fixed top-4 right-4 p-2 rounded-full bg-transparent hover:text-cyan-400 dark:hover:text-fuchsia-400 text-gray-800 dark:text-gray-100 transition sm:text-sm md:text-md lg:text-lg" aria-label="Toggle theme"><!--[!--><iconify-icon icon="ic:round-dark-mode"></iconify-icon><!--]--></button><!----> <div class="bg-neutral-100 dark:bg-neutral-900 transition-colors font-mono px-4 py-12 min-h-screen svelte-1i0rqxg"><section class="max-w-4xl mx-auto svelte-1i0rqxg"><h1 class="text-4xl font-bold mb-2 text-gray-900 dark:text-neutral-100 transition-colors svelte-1i0rqxg">Basic Strategy in Skat</h1> <p class="text-sm text-gray-500 dark:text-neutral-200 transition-colors mb-6 svelte-1i0rqxg">2025-08-04</p> <div class="content space-y-6 text-base text-neutral-800 dark:text-neutral-800 leading-relaxed svelte-1i0rqxg"><!----><p>In Blackjack, there is something called <a href="https://www.blackjackapprenticeship.com/blackjack-strategy-charts/">basic strategy</a>. It is, as described by the name, a set of basic rules a player can use to get themselves the best odds possible without cheating or card counting. Basic strategy is best known in Blackjack, but it also takes other forms in games such as Poker, Craps (in a form), and realistically any other card game. It is important as by outlining the most standard and probably way to play the game, a player can have confidence that the game is essentially all luck as there is nothing else they can reasonably do to win. </p>
 <p>Since the time of my great-grandmother, my family has played a game called <a href="https://en.wikipedia.org/wiki/Skat_(card_game)">Skat</a>. Skat is unlike the aforementioned games as while those games are strongly defined, Skat has many variations all of which are valid and played, but designed around history and individuals making up rules. And such is how we got the version of Skat that I know and play. Of course, as that preamble states, the version of Skat I know is extremely different from the traditional set of rules, so I will explain the rules:</p>
 <p>To begin, a standard deck of 52 cards is dealt out until all players have three cards. All players are also given three dimes as their ‘lives.’ The remainder of the deck is placed face down in the center of the table with the one card pulled off the top signifying the discard pile. A round starts left of the dealer, where the goal is to get a set of cards scoring higher than at least one person at the table. Each turn If there is no one with a lower score, you must place your dime in the pot. Each player also gets one extra life when they are out of lives called being on your honor. Losing this life takes you out of the game. The game ends when all players but one have lost all their lives, and as such the winner takes the pot. </p>
 <p>A player’s turn is simple. Their goal is to either have a higher score than someone else, or in rare cases, get ‘Skat’ where their hand scores exactly 31 points – the highest possible. In this scenario, all players except the player give up one coin to the pot. Because of this, a player pulls either the top card or last discarded card and replaces one card in their hand to get closer to 31. Cards only add if they are the same suit and thus a player hopes that the table is not collecting the same suit they are in their advance towards Skat. When a player wants to end the round, they can knock on the table instead of drawing to force one last rotation before ending on them, giving everyone else at the table one last chance to draw for a better hand. </p>
@@ -48,15 +55,15 @@
 			
 			<script>
 				{
-					__sveltekit_1509lys = {
+					__sveltekit_1lrl8mq = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.CImwo0S3.js"),
-						import("../_app/immutable/entry/app.xA3AlP71.js")
+						import("../_app/immutable/entry/start.k6gd6nic.js"),
+						import("../_app/immutable/entry/app.BiF7o3Us.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],

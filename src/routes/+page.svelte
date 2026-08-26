@@ -11,7 +11,7 @@
 </svelte:head>
 
 <!-- I think I have brain damage because I see this and the only thing I can think of are React components (how I built FSV2) -->
-<div class="app">
+<div class="app bg-neutral-100 dark:bg-neutral-900 transition-colors">
 	<Opener />
 	<Projects />
 	<About />

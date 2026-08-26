@@ -5,24 +5,31 @@
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+		(function() {
+			const match = document.cookie.match(/(^| )theme=([^;]+)/);
+			const theme = match ? match[2] : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+			document.documentElement.classList.toggle('dark', theme === 'dark');
+		})();
+		</script>
 		
-		<link href="../_app/immutable/assets/app.CpmAKjzW.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/app.C5nA8v2V.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/Footer.CgORz9JN.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/4.Bup8knbq.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.CImwo0S3.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DqZeMT_l.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/BmimBzjD.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/QMxIJtnF.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.xA3AlP71.js">
+		<link href="../_app/immutable/assets/4.B6OvQAof.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.k6gd6nic.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BJ7O5iy2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CUwnD3Pt.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BiF7o3Us.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/CWj6FrbW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/QD2w4APO.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CZmG_RZY.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/COhMKUKa.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.pBlMG3BA.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/CiZq0IWe.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
+		<link rel="modulepreload" href="../_app/immutable/chunks/B4mHgaPJ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BKQ4J44-.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.B41afAGw.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CNSYk7nF.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.Cak2yUTY.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BGBUrwCb.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects"><button class="fixed top-4 left-4 text-sm px-4 py-2 rounded hover:bg-cyan-100 transition">← Back</button></a> <div class="bg-neutral-100 font-mono px-4 py-12 min-h-screen"><section class="max-w-4xl mx-auto"><h1 class="text-4xl font-bold mb-2">Homelab</h1> <p class="text-sm text-gray-500 mb-6">2022-08-11</p> <div class="content space-y-6 text-base text-neutral-800 leading-relaxed"><!----><p>I orignally intended for this page to be about my &#39;homelab&#39; that I had built and running, but I guess this is going to be more of a short memorial to what was.</p>
+		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects" class="svelte-1i0rqxg"><button class="fixed top-4 left-4 sm:text-sm md:text-sm lg:text-sm px-4 py-2 rounded hover:text-cyan-400 dark:hover:text-fuchsia-400 text-neutral-900 dark:text-neutral-100 transition svelte-1i0rqxg">← Back</button></a> <button class="fixed top-4 right-4 p-2 rounded-full bg-transparent hover:text-cyan-400 dark:hover:text-fuchsia-400 text-gray-800 dark:text-gray-100 transition sm:text-sm md:text-md lg:text-lg" aria-label="Toggle theme"><!--[!--><iconify-icon icon="ic:round-dark-mode"></iconify-icon><!--]--></button><!----> <div class="bg-neutral-100 dark:bg-neutral-900 transition-colors font-mono px-4 py-12 min-h-screen svelte-1i0rqxg"><section class="max-w-4xl mx-auto svelte-1i0rqxg"><h1 class="text-4xl font-bold mb-2 text-gray-900 dark:text-neutral-100 transition-colors svelte-1i0rqxg">Homelab</h1> <p class="text-sm text-gray-500 dark:text-neutral-200 transition-colors mb-6 svelte-1i0rqxg">2022-08-11</p> <div class="content space-y-6 text-base text-neutral-800 dark:text-neutral-800 leading-relaxed svelte-1i0rqxg"><!----><p>I orignally intended for this page to be about my &#39;homelab&#39; that I had built and running, but I guess this is going to be more of a short memorial to what was.</p>
 <p>At the start of covid, I was bored, so I started working in other operating systems then Windows. I had been working with Ubuntu since I was 14 on a old Compaq with less cores then I have wheels on my car. Safe to say, I was not good at running Linux. But I wanted to be, and I discovered  <a href="https://reddit.com/r/homelab">r/homelab</a> on reddit. And I thought, wow that&#39;s cool I want to do that. So early covid, when I had a ton of time, I went on Facebook marketplace and bought a 50 lbs server (HP Proliant G6 2U) with dual Intel Xeons, 64 GB of DDR3 RAM, 8 bays for hard drives, and two <b>hulking</b> 450-watt power supplies. I probably should not own this server. Enterprise grade hardware is expensive, and resource intensive, and I love it, but is extremely powerful can run away from you without a enterprise grade budget. It is a HP ProLiant from ~2012 with the caveat that it can only run HP supported drives. Which is super restraining. If you do run a drive that is not HP approved, it will run the fans as fast and loud as it can, and everyone in your house will be able to hear it. How do I know this, because I did it. And my power bill went up $300 dollars. I also had to mod a battery into it to make the hdd port map (at least I think that’s what it&#39;s called) be non-volatile and not reset after every boot. Now, as you can tell, I was not very responsible with this. So, I don&#39;t run it anymore. However, I can definitely say that it was a learning experience as I now understand Proxmox and ESXi way better. In the short time I had run it, I ran two NAS servers, a website, a Ubuntu playground which I specifically used to run old versions of windows and nuke with viruses, and my first taste of the addictive poison that is Arch Linux.</p>
 <img src="https://i.imgur.com/ahWrquN.jpg" alt="picture of the lad" />
 
@@ -39,15 +46,15 @@
 			
 			<script>
 				{
-					__sveltekit_1509lys = {
+					__sveltekit_1lrl8mq = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.CImwo0S3.js"),
-						import("../_app/immutable/entry/app.xA3AlP71.js")
+						import("../_app/immutable/entry/start.k6gd6nic.js"),
+						import("../_app/immutable/entry/app.BiF7o3Us.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],

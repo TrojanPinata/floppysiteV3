@@ -5,24 +5,31 @@
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+		(function() {
+			const match = document.cookie.match(/(^| )theme=([^;]+)/);
+			const theme = match ? match[2] : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+			document.documentElement.classList.toggle('dark', theme === 'dark');
+		})();
+		</script>
 		
-		<link href="../_app/immutable/assets/app.CpmAKjzW.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/app.C5nA8v2V.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/Footer.CgORz9JN.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/4.Bup8knbq.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.CImwo0S3.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DqZeMT_l.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/BmimBzjD.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/QMxIJtnF.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.xA3AlP71.js">
+		<link href="../_app/immutable/assets/4.B6OvQAof.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.k6gd6nic.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BJ7O5iy2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CUwnD3Pt.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BiF7o3Us.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/CWj6FrbW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/QD2w4APO.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CZmG_RZY.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/COhMKUKa.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.pBlMG3BA.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/CiZq0IWe.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
+		<link rel="modulepreload" href="../_app/immutable/chunks/B4mHgaPJ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BKQ4J44-.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.B41afAGw.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CNSYk7nF.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.Cak2yUTY.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BGBUrwCb.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects"><button class="fixed top-4 left-4 text-sm px-4 py-2 rounded hover:bg-cyan-100 transition">← Back</button></a> <div class="bg-neutral-100 font-mono px-4 py-12 min-h-screen"><section class="max-w-4xl mx-auto"><h1 class="text-4xl font-bold mb-2">Making a Camera From Scratch</h1> <p class="text-sm text-gray-500 mb-6">2025-11-17</p> <div class="content space-y-6 text-base text-neutral-800 leading-relaxed"><!----><p>Last year, I wrote a page on here about recreating a product called the <a href="https://brianchill.us/projects/Dispolens">dispolens</a>, a lens which makes photos look like they were captured with a disposable camera. As should be obvious by the completion of that project, I am really interested in cameras. I take a lot of photos digitally, and most people know me for shooting film and processing film myself. Photography is something I have been doing since I was in my early teens, and continuing it now that I have graduated is a given. </p>
+		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects" class="svelte-1i0rqxg"><button class="fixed top-4 left-4 sm:text-sm md:text-sm lg:text-sm px-4 py-2 rounded hover:text-cyan-400 dark:hover:text-fuchsia-400 text-neutral-900 dark:text-neutral-100 transition svelte-1i0rqxg">← Back</button></a> <button class="fixed top-4 right-4 p-2 rounded-full bg-transparent hover:text-cyan-400 dark:hover:text-fuchsia-400 text-gray-800 dark:text-gray-100 transition sm:text-sm md:text-md lg:text-lg" aria-label="Toggle theme"><!--[!--><iconify-icon icon="ic:round-dark-mode"></iconify-icon><!--]--></button><!----> <div class="bg-neutral-100 dark:bg-neutral-900 transition-colors font-mono px-4 py-12 min-h-screen svelte-1i0rqxg"><section class="max-w-4xl mx-auto svelte-1i0rqxg"><h1 class="text-4xl font-bold mb-2 text-gray-900 dark:text-neutral-100 transition-colors svelte-1i0rqxg">Making a Camera From Scratch</h1> <p class="text-sm text-gray-500 dark:text-neutral-200 transition-colors mb-6 svelte-1i0rqxg">2025-11-17</p> <div class="content space-y-6 text-base text-neutral-800 dark:text-neutral-800 leading-relaxed svelte-1i0rqxg"><!----><p>Last year, I wrote a page on here about recreating a product called the <a href="https://brianchill.us/projects/Dispolens">dispolens</a>, a lens which makes photos look like they were captured with a disposable camera. As should be obvious by the completion of that project, I am really interested in cameras. I take a lot of photos digitally, and most people know me for shooting film and processing film myself. Photography is something I have been doing since I was in my early teens, and continuing it now that I have graduated is a given. </p>
 <p>A longstanding dream of mine has always been to create a camera. I’ve always thought it would be cool to take a picture on something fully designed myself. The combination of doing electronics projects and taking photos has always been a sort of holy grail. The biggest setbacks to actually do this are sourcing a usable quality sensor and getting the electronics made. Currently, it is not really possible to design a fully custom PCB due to tariffs and sensor availability, but I thought I would still give it a shot. </p>
 <p>Recently, <a href="https://en.wikipedia.org/wiki/Raspberry_Pi">Raspberry Pi</a> has released a new version of their <a href="https://en.wikipedia.org/wiki/Raspberry_Pi#Cameras">small format cameras</a> which is less of a camera, and more of a sensor. The <a href="https://www.adafruit.com/product/4561">Pi Camera High Quality</a> is a 12MP sensor made by Sony which can just kind of… connect to a <a href="https://www.raspberrypi.com/products/raspberry-pi-zero-2-w/">Pi Zero 2W</a>. This makes it really easy to connect with their product ecosystem and allows for photos to be taken as long as light is focused in such a way that it falls on the sensor in focus. As we learned with the dispolens project, lens output an image with a specific flange focal distance in mind, so as long as a lens and mounting body is designed with a gap to allocate for that, technically, any lens should be able to work with this bare sensor. </p>
 <img src="https://i.imgur.com/hNf9Bma.jpeg" alt="high quality pi camera v3" />
@@ -60,15 +67,15 @@
 			
 			<script>
 				{
-					__sveltekit_1509lys = {
+					__sveltekit_1lrl8mq = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.CImwo0S3.js"),
-						import("../_app/immutable/entry/app.xA3AlP71.js")
+						import("../_app/immutable/entry/start.k6gd6nic.js"),
+						import("../_app/immutable/entry/app.BiF7o3Us.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],

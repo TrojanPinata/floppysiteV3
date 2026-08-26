@@ -19,21 +19,21 @@
 	*/
 </script>
 
-<div class="mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
+<div class="mx-auto px-4 sm:px-6 md:px-8 lg:px-12 bg-neutral-100 dark:bg-neutral-900 transition-colors">
 	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 py-6 sm:py-10 md:py-16">
-  		{#each latest as project}
-    		<a href={`/projects/${project.slug}`} class="rounded-xl shadow-md overflow-hidden bg-white hover:shadow-lg transition duration-200">
-      	<img src={project.image} alt={project.title} class="w-full h-64 sm:h-48 md:h-64 lg:h-64 2xl:h-82 object-cover rounded-xl"/>
-      	<div class="p-4">
-        		<h3 class="text-lg font-semibold">{project.title}</h3>
-        		<p class="text-sm text-gray-500">{project.date}</p>
-      	</div>
-    	</a>
+  		{#each latest as project (project.slug)}
+    		<a href={`/projects/${project.slug}`} class="rounded-xl shadow-md overflow-hidden bg-white dark:bg-neutral-800 hover:shadow-xl hover:scale-101 transition">
+      			<img src={project.image} alt={project.title} class="w-full h-64 sm:h-48 md:h-64 lg:h-64 2xl:h-82 object-cover rounded-xl"/>
+      			<div class="p-4">
+        			<h3 class="text-lg font-semibold text-black dark:text-neutral-100 transition-colors">{project.title}</h3>
+        			<p class="text-sm text-gray-500 dark:text-neutral-200 transition-colors">{project.date}</p>
+      			</div>
+    			</a>
   		{/each}
 
-  		<a href="/projects" class="rounded-xl border-2 border-dashed border-gray-400 flex items-center justify-center text-center hover:bg-gray-50 transition duration-200">
+  		<a href="/projects" class="rounded-xl border-2 border-dashed border-gray-400 dark:border-gray-600 flex items-center justify-center text-center hover:bg-gray-50 dark:hover:bg-neutral-700 transition">
    		<div class="p-4">
-      		<p class="text-lg font-medium">View All Projects →</p>
+      		<p class="text-lg font-medium text-black dark:text-neutral-100 transition-colors">View All Projects →</p>
    		</div>
   		</a>
 	</div>

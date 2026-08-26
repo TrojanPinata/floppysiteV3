@@ -1,6 +1,7 @@
 <script lang="ts">
 	import '../app.css';
    import { typewriter_header } from '$lib/typewriter.js';
+	import ThemeButton from '$lib/ThemeButton.svelte';
 
    const icons = [
     	{
@@ -27,17 +28,18 @@
 </script>
 
 <div>
-	<section class="bg-neutral-100 h-screen flex items-center justify-center">
+   <ThemeButton />
+	<section class="bg-neutral-100 dark:bg-neutral-900 transition-colors h-screen flex items-center justify-center">
       <div class="text-center">
-         <h1 use:typewriter_header={{ speed: 50 }} class="typewriter-header text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-mono"><!-- i know what i'm doing --></h1>
-         <div class="text-base sm:text-lg md:text-xl lg:text-2xl font-mono relative w-4/5 sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto mt-2">
+         <h1 use:typewriter_header={{ speed: 50 }} class="typewriter-header text-neutral-950 dark:text-neutral-100 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-mono"><!-- i know what i'm doing --></h1>
+         <div class="text-base text-neutral-950 dark:text-neutral-100 transition-colors sm:text-lg md:text-xl lg:text-2xl font-mono relative w-4/5 sm:w-3/4 md:w-2/3 lg:w-1/2 mx-auto mt-2">
             <p>
                This is my personal website written in Svelte and is the third iteration of my FloppySite project, a website which was made to run off of a floppy disk.
             </p>
             <p>All of the projects I have done are below.</p>
             <div class="flex justify-center gap-4 mt-4">
                {#each icons as { name, href, icon } (name)}
-				      <a href={href} target="_blank" rel="noopener noreferrer" aria-label={name} class="text-lg text-neutral-400 hover:text-black transition-colors">
+				      <a href={href} target="_blank" rel="noopener noreferrer" aria-label={name} class="text-lg text-neutral-400 dark:text-neutral-700 hover:text-black dark:hover:text-neutral-100 transition-colors">
 					      <iconify-icon icon={icon}></iconify-icon>
 				      </a>
                {/each}

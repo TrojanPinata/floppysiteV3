@@ -1,19 +1,18 @@
 <script>
 	export let data;
+	import ThemeButton from '$lib/ThemeButton.svelte';
 	import Footer from '../../Footer.svelte';
 </script>
 
-<a href="/projects">
-   <button class="fixed top-4 left-4 text-sm px-4 py-2 rounded hover:bg-cyan-100  transition">
-      ← Back
-   </button>
-</a>
+<a href="/projects"><button class="fixed top-4 left-4 sm:text-sm md:text-sm lg:text-sm px-4 py-2 rounded hover:text-cyan-400 dark:hover:text-fuchsia-400 text-neutral-900 dark:text-neutral-100 transition">← Back</button></a>
 
-<div class="bg-neutral-100 font-mono px-4 py-12 min-h-screen">
+<ThemeButton />
+
+<div class="bg-neutral-100 dark:bg-neutral-900 transition-colors font-mono px-4 py-12 min-h-screen">
 	<section class="max-w-4xl mx-auto">
-		<h1 class="text-4xl font-bold mb-2">{data.meta.title}</h1>
-		<p class="text-sm text-gray-500 mb-6">{data.meta.date}</p>
-		<div class="content space-y-6 text-base text-neutral-800 leading-relaxed">{@html data.content}</div>
+		<h1 class="text-4xl font-bold mb-2 text-gray-900 dark:text-neutral-100 transition-colors">{data.meta.title}</h1>
+		<p class="text-sm text-gray-500 dark:text-neutral-200 transition-colors mb-6">{data.meta.date}</p>
+		<div class="content space-y-6 text-base text-neutral-800 dark:text-neutral-800 leading-relaxed">{@html data.content}</div>
 	</section>
 </div>
 
@@ -146,6 +145,56 @@
 	:global(.content th) {
 		background-color: #e5e5e5;
 		font-weight: 700;
+	}
+
+	:global(.dark .content p) {
+		color: #f5f5f5;
+	}
+	:global(.dark .content a) {
+		color: #4fc3f7;
+	}
+	:global(.dark .content a:visited) {
+		color: #d896ff;
+	}
+
+	:global(.dark .content h2),
+	:global(.dark .content h3) {
+		color: #f5f5f5;
+	}
+	:global(.dark .content h4) {
+		color: #e5e5e5;
+	}
+
+	:global(.dark .content code) {
+		background-color: #333333;
+		color: #e5e5e5;
+	}
+
+	:global(.dark .content blockquote) {
+		border-left-color: #4fc3f7;
+		color: #a3a3a3;
+	}
+
+	:global(.dark .content strong) {
+		color: #f5f5f5;
+	}
+
+	:global(.dark .content hr) {
+		border-top-color: #404040;
+	}
+
+	:global(.dark .content th),
+	:global(.dark .content td) {
+		border-color: #404040;
+	}
+	:global(.dark .content th) {
+		background-color: #262626;
+	}
+
+	* {
+		transition-property: background-color, border-color, color, fill, stroke;
+		transition-duration: 100ms;
+		transition-timing-function: ease;
 	}
 </style>
 

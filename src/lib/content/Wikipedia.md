@@ -3,8 +3,6 @@ title: "Graphing Wikipedia"
 date: "2026-01-10"
 ---
 
-<a href=""></a>
-
 To begin, I should mention that I am in no way a data scientist or programmer really specializing in graphing in any way. I came up with this project after reading about the <a href="https://en.wikipedia.org/wiki/Wikipedia_philosophy_phenomenon">Philosophy game</a> and finding out you can <a href="https://en.wikipedia.org/wiki/Wikipedia:Database_download">download a dump of Wikipedia</a> without needing a couple of hard drives to store it all. As the title states, the goal is to graph Wikipedia (partially, you’ll see) and as with every project I do, I wanted to learn certain skills as well as getting a nice result. In this case, I wanted to learn how to use the dedicated Wikipedia dumping tools, store large amounts of data as efficiently as possible, make my program’s runtime decently quick, and display a large amount of data in a way that is aesthetically pleasing.
 
 To start this project, I first downloaded a dump of Wikipedia. Luckily, they make that as easy as possible, and you can get a <a href="https://meta.wikimedia.org/wiki/Data_dump_torrents#English_Wikipedia">~25GB compressed dump from here</a>. You can either decompress it to ~120GB or leave it compressed and gradually decompress it while processing it to save space. I ended up decompressing it before working because I had the storage, and as we will discuss in much more detail later, probably need more memory in my system to keep doing these kinds of projects.

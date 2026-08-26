@@ -5,24 +5,31 @@
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+		(function() {
+			const match = document.cookie.match(/(^| )theme=([^;]+)/);
+			const theme = match ? match[2] : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+			document.documentElement.classList.toggle('dark', theme === 'dark');
+		})();
+		</script>
 		
-		<link href="../_app/immutable/assets/app.CpmAKjzW.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/app.C5nA8v2V.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/Footer.CgORz9JN.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/4.Bup8knbq.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.CImwo0S3.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DqZeMT_l.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/BmimBzjD.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/QMxIJtnF.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.xA3AlP71.js">
+		<link href="../_app/immutable/assets/4.B6OvQAof.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.k6gd6nic.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BJ7O5iy2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CUwnD3Pt.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BiF7o3Us.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/CWj6FrbW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/QD2w4APO.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CZmG_RZY.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/COhMKUKa.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.pBlMG3BA.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/CiZq0IWe.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
+		<link rel="modulepreload" href="../_app/immutable/chunks/B4mHgaPJ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BKQ4J44-.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.B41afAGw.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CNSYk7nF.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.Cak2yUTY.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BGBUrwCb.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects"><button class="fixed top-4 left-4 text-sm px-4 py-2 rounded hover:bg-cyan-100 transition">← Back</button></a> <div class="bg-neutral-100 font-mono px-4 py-12 min-h-screen"><section class="max-w-4xl mx-auto"><h1 class="text-4xl font-bold mb-2">A Lesson in Failure</h1> <p class="text-sm text-gray-500 mb-6">2026-03-28</p> <div class="content space-y-6 text-base text-neutral-800 leading-relaxed"><!----><p>I will begin by saying this project was not a success. The events of this story started in September 2025 and completely burnt me out on any and all projects to the point that I am only now finding the motivation to do these kinds of things again. </p>
+		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects" class="svelte-1i0rqxg"><button class="fixed top-4 left-4 sm:text-sm md:text-sm lg:text-sm px-4 py-2 rounded hover:text-cyan-400 dark:hover:text-fuchsia-400 text-neutral-900 dark:text-neutral-100 transition svelte-1i0rqxg">← Back</button></a> <button class="fixed top-4 right-4 p-2 rounded-full bg-transparent hover:text-cyan-400 dark:hover:text-fuchsia-400 text-gray-800 dark:text-gray-100 transition sm:text-sm md:text-md lg:text-lg" aria-label="Toggle theme"><!--[!--><iconify-icon icon="ic:round-dark-mode"></iconify-icon><!--]--></button><!----> <div class="bg-neutral-100 dark:bg-neutral-900 transition-colors font-mono px-4 py-12 min-h-screen svelte-1i0rqxg"><section class="max-w-4xl mx-auto svelte-1i0rqxg"><h1 class="text-4xl font-bold mb-2 text-gray-900 dark:text-neutral-100 transition-colors svelte-1i0rqxg">A Lesson in Failure</h1> <p class="text-sm text-gray-500 dark:text-neutral-200 transition-colors mb-6 svelte-1i0rqxg">2026-03-28</p> <div class="content space-y-6 text-base text-neutral-800 dark:text-neutral-800 leading-relaxed svelte-1i0rqxg"><!----><p>I will begin by saying this project was not a success. The events of this story started in September 2025 and completely burnt me out on any and all projects to the point that I am only now finding the motivation to do these kinds of things again. </p>
 <p>A while back, I made the <a href="https://brianchill.us/projects/TinyKeeb">TinyKeeb</a> for a friend and while I was designing it, I found the process to be really fun and unique. The final product was also pretty well built, but my biggest complaint was that it was 3d printed, and by extension there is a upper limit to how good the final result could look. I tried pretty hard to sand and clean up the one I made for them, but I always felt that I could make it significantly better if I invested into optimizing the design for production at scale.</p>
 <p>My idea stemmed from talking to my friend one day and thinking about how I would actually produce more than one at a time, while also increasing the quality to be a feasible retail product. I started by tackling the issues with the housing and keys, flattening as much as possible to make the keys easier to print and easier to press, then I redesigned the housing to improve the print quality, and devised a solution of sanding, spraying with body filler, sanding some more, painting, and finishing to make the bodies look significantly better than the first prototype. I was really happy with this, so I also designed a new PCB compared to the first one which would make putting them together easier and overall streamline the process. The hardest part of the first design was that I had to manually solder every switch in by hand, and I had to have wires running to a Pi Pico behind the board to make it function. I designed everything to get away from that, and I was super excited to try my new production methods and make a couple of these to sell. I’ve always wanted to get into selling the things I make, but I don’t want them to feel cheap or break easily, so this felt like a good time to try it out.</p>
 <img src="https://i.imgur.com/s78jCXY.jpeg" alt="improved housing and keycaps" />
@@ -47,15 +54,15 @@
 			
 			<script>
 				{
-					__sveltekit_1509lys = {
+					__sveltekit_1lrl8mq = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.CImwo0S3.js"),
-						import("../_app/immutable/entry/app.xA3AlP71.js")
+						import("../_app/immutable/entry/start.k6gd6nic.js"),
+						import("../_app/immutable/entry/app.BiF7o3Us.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],

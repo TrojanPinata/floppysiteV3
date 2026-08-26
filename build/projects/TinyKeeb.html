@@ -5,24 +5,31 @@
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+		(function() {
+			const match = document.cookie.match(/(^| )theme=([^;]+)/);
+			const theme = match ? match[2] : (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+			document.documentElement.classList.toggle('dark', theme === 'dark');
+		})();
+		</script>
 		
-		<link href="../_app/immutable/assets/app.CpmAKjzW.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/app.C5nA8v2V.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/Footer.CgORz9JN.css" rel="stylesheet">
-		<link href="../_app/immutable/assets/4.Bup8knbq.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.CImwo0S3.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/DqZeMT_l.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/BmimBzjD.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/QMxIJtnF.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.xA3AlP71.js">
+		<link href="../_app/immutable/assets/4.B6OvQAof.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.k6gd6nic.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BJ7O5iy2.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CUwnD3Pt.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.BiF7o3Us.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/CWj6FrbW.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/QD2w4APO.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.CZmG_RZY.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/COhMKUKa.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.pBlMG3BA.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/CiZq0IWe.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
+		<link rel="modulepreload" href="../_app/immutable/chunks/B4mHgaPJ.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BKQ4J44-.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.B41afAGw.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/CNSYk7nF.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.Cak2yUTY.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/BGBUrwCb.js"><!--[--><meta name="description" content=""/><!--]--><title>&lt;Brian Hill's FloppySite></title>
 	</head>
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects"><button class="fixed top-4 left-4 text-sm px-4 py-2 rounded hover:bg-cyan-100 transition">← Back</button></a> <div class="bg-neutral-100 font-mono px-4 py-12 min-h-screen"><section class="max-w-4xl mx-auto"><h1 class="text-4xl font-bold mb-2">Making a really tiny keyboard</h1> <p class="text-sm text-gray-500 mb-6">2024-12-22</p> <div class="content space-y-6 text-base text-neutral-800 leading-relaxed"><!----><p>I have made a lot of QMK based keyboard projects in the past. I like microcontrollers, and I like keyboards, so fusing them together seems pretty ideal for short term projects that I do (that’s a lie, most of my projects take forever). However, sometimes when I want to make something weird, in a smililar fashion to what I currently make but more creatively driven, I think the things I make really shine. The <a href="https://github.com/TrojanPinata/Model-B">Model-B</a> is still my proudest project to date, but I would like to introduce the <a href="https://github.com/TrojanPinata/tiny-keeb">tiny keeb.</a></p>
+		<div style="display: contents"><!--[--><!--[--><!----><!----><!----><a href="/projects" class="svelte-1i0rqxg"><button class="fixed top-4 left-4 sm:text-sm md:text-sm lg:text-sm px-4 py-2 rounded hover:text-cyan-400 dark:hover:text-fuchsia-400 text-neutral-900 dark:text-neutral-100 transition svelte-1i0rqxg">← Back</button></a> <button class="fixed top-4 right-4 p-2 rounded-full bg-transparent hover:text-cyan-400 dark:hover:text-fuchsia-400 text-gray-800 dark:text-gray-100 transition sm:text-sm md:text-md lg:text-lg" aria-label="Toggle theme"><!--[!--><iconify-icon icon="ic:round-dark-mode"></iconify-icon><!--]--></button><!----> <div class="bg-neutral-100 dark:bg-neutral-900 transition-colors font-mono px-4 py-12 min-h-screen svelte-1i0rqxg"><section class="max-w-4xl mx-auto svelte-1i0rqxg"><h1 class="text-4xl font-bold mb-2 text-gray-900 dark:text-neutral-100 transition-colors svelte-1i0rqxg">Making a really tiny keyboard</h1> <p class="text-sm text-gray-500 dark:text-neutral-200 transition-colors mb-6 svelte-1i0rqxg">2024-12-22</p> <div class="content space-y-6 text-base text-neutral-800 dark:text-neutral-800 leading-relaxed svelte-1i0rqxg"><!----><p>I have made a lot of QMK based keyboard projects in the past. I like microcontrollers, and I like keyboards, so fusing them together seems pretty ideal for short term projects that I do (that’s a lie, most of my projects take forever). However, sometimes when I want to make something weird, in a smililar fashion to what I currently make but more creatively driven, I think the things I make really shine. The <a href="https://github.com/TrojanPinata/Model-B">Model-B</a> is still my proudest project to date, but I would like to introduce the <a href="https://github.com/TrojanPinata/tiny-keeb">tiny keeb.</a></p>
 <img src="https://i.imgur.com/Imawi3y.jpeg" alt="tiny keeb" />
 
 <p>The tiny keeb is a 60% keyboard which has a footprint one quarter the area of a traditional 60% board. Since this keyboard is so small, it can’t use traditional keyboard switches or keycaps. I had to develop my own keycaps in conjunction with some Omron industrial switches in order to reduce the size and increase usability. It’s also small enough that my Prusa mini could print everything on its tiny 180mm x 180mm plate.</p>
@@ -38,15 +45,15 @@
 			
 			<script>
 				{
-					__sveltekit_1509lys = {
+					__sveltekit_1lrl8mq = {
 						base: new URL("..", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("../_app/immutable/entry/start.CImwo0S3.js"),
-						import("../_app/immutable/entry/app.xA3AlP71.js")
+						import("../_app/immutable/entry/start.k6gd6nic.js"),
+						import("../_app/immutable/entry/app.BiF7o3Us.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
