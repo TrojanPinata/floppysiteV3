@@ -1,7 +1,21 @@
-<script>
+<script lang="ts">
 	export let data;
 	import ThemeButton from '$lib/ThemeButton.svelte';
 	import Footer from '../../Footer.svelte';
+
+	function getSiteIcon(url: string): string {
+		try {
+			const hostname = new URL(url).hostname.replace('www.', '');
+
+			if (hostname === 'github.com') return 'simple-icons:github';
+    		if (hostname === 'codeberg.org') return 'simple-icons:codeberg';
+			return 'akar-icons:link-chain';
+		} 
+		catch {
+			return 'akar-icons:link-chain';
+		}
+	}
+
 </script>
 
 <a href="/projects"><button class="fixed top-4 left-4 sm:text-sm md:text-sm lg:text-sm px-4 py-2 rounded hover:text-cyan-400 dark:hover:text-fuchsia-400 text-neutral-900 dark:text-neutral-100 transition">← Back</button></a>
@@ -11,7 +25,7 @@
 <div class="bg-neutral-100 dark:bg-neutral-900 transition-colors font-mono px-4 py-12 min-h-screen">
 	<section class="max-w-4xl mx-auto">
 		<h1 class="text-4xl font-bold mb-2 text-gray-900 dark:text-neutral-100 transition-colors">{data.meta.title}</h1>
-		<p class="text-sm text-gray-500 dark:text-neutral-200 transition-colors mb-6">{data.meta.date}</p>
+		<p class="text-sm text-gray-500 dark:text-neutral-400 transition-colors mb-6">{data.meta.date} • <a href={data.meta.link} aria-label="source link" target="_blank" rel="noopener noreferrer" class="hover:text-gray-900 dark:hover:text-neutral-100 "><iconify-icon icon={getSiteIcon(data.meta.link)}></iconify-icon></a></p>
 		<div class="content space-y-6 text-base text-neutral-800 dark:text-neutral-800 leading-relaxed">{@html data.content}</div>
 	</section>
 </div>

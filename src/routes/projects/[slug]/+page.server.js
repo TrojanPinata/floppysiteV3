@@ -24,7 +24,7 @@ export async function load({ params }) {
 	const html = marked(content);
 
 	return {
-		meta: data,
+		meta: { ...project, ...data},
 		content: html
 	};
 }
