@@ -3,7 +3,7 @@ import type { PageServerLoad } from './$types';
 
 export const load: PageServerLoad = async () => {
     const photos = await getAllPhotos();
-    return { latest: photos.slice(0, 16) };
+    return { latest: photos.slice(0, 30) };
 };
 
 export interface Photo {
