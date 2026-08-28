@@ -41,6 +41,6 @@
 
 <style>
   	iconify-icon {
-   	display: block;
+   		display: block;
   	}
 </style>

@@ -1,9 +1,9 @@
 <script>
-  import projects from '$lib/content/projects.json';
+    import projects from '$lib/content/projects.json';
 	import ThemeButton from '$lib/ThemeButton.svelte';
-  import Footer from '../Footer.svelte';
+    import Footer from '../Footer.svelte';
 
-  const sorted = [...projects].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+    const sorted = [...projects].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 </script>
 
 
@@ -14,22 +14,22 @@
 <div class="mx-auto px-4 sm:px-6 md:px-8 lg:px-12 bg-neutral-100 dark:bg-neutral-900 transition-colors">
 	<div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 py-6 sm:py-10 md:py-16">
 
-      <!-- Cool intro box that just says 'Projects' -->
-      <div class="rounded-xl border-2 border-dashed border-gray-400 dark:border-gray-600 flex items-center justify-center text-center transition">
-   		<div class="p-4">
-      		<p class="typewriter-header text-4xl font-semibold text-neutral-900 dark:text-neutral-100 transition-colors">Projects</p>
-   		</div>
+        <!-- Cool intro box that just says 'Projects' -->
+        <div class="rounded-xl border-2 border-dashed border-gray-400 dark:border-gray-600 flex items-center justify-center text-center transition">
+   		    <div class="p-4">
+      		    <p class="typewriter-header text-4xl font-semibold text-neutral-900 dark:text-neutral-100 transition-colors">Projects</p>
+   		    </div>
   		</div>
 
-      <!-- List all projects from newest -->
+        <!-- List all projects from newest -->
   		{#each sorted as project (project.slug)}
     		<a href={`/projects/${project.slug}`} class="rounded-xl shadow-md overflow-hidden bg-white dark:bg-neutral-800 hover:shadow-xl hover:scale-101 transition">
-            <img src={project.image} alt={project.title} class="w-full h-64 sm:h-48 md:h-64 lg:h-64 2xl:h-82 object-cover"/>
-            <div class="p-4">
-               <h3 class="text-lg font-semibold text-black dark:text-neutral-100 transition-colors">{project.title}</h3>
-               <p class="text-sm text-gray-500 dark:text-neutral-200 transition-colors">{project.date}</p>
-            </div>
-         </a>
+                <img src={project.image} alt={project.title} class="w-full h-64 sm:h-48 md:h-64 lg:h-64 2xl:h-82 object-cover"/>
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold text-black dark:text-neutral-100 transition-colors">{project.title}</h3>
+                    <p class="text-sm text-gray-500 dark:text-neutral-200 transition-colors">{project.date}</p>
+                </div>
+            </a>
   		{/each}
 	</div>
 </div>
@@ -37,19 +37,19 @@
 <Footer />
 
 <style lang="postcss"> 
-   @reference "tailwindcss"; 
+    @reference "tailwindcss"; 
 
-   :global(html) { 
-      background-color: theme(--color-gray-100); 
-   }
+    :global(html) { 
+        background-color: theme(--color-gray-100); 
+    }
 
-   .typewriter-header::after {
-      content: '|';
-      animation: blink 1s step-end infinite;
-      margin-left: 0.2em;
-   }
+    .typewriter-header::after {
+        content: '|';
+        animation: blink 1s step-end infinite;
+        margin-left: 0.2em;
+    }
 
-   @keyframes blink {
-      50% { opacity: 0; }
-   }
+    @keyframes blink {
+        50% { opacity: 0; }
+    }
 </style>
