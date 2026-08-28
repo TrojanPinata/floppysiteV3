@@ -17,7 +17,7 @@
       <!-- Cool intro box that just says 'Projects' -->
       <div class="rounded-xl border-2 border-dashed border-gray-400 dark:border-gray-600 flex items-center justify-center text-center transition">
    		<div class="p-4">
-      		<p class="typewriter-header text-4xl font-semibold text-neutral-900 dark:text-neutral-100">Projects</p>
+      		<p class="typewriter-header text-4xl font-semibold text-neutral-900 dark:text-neutral-100 transition-colors">Projects</p>
    		</div>
   		</div>
 

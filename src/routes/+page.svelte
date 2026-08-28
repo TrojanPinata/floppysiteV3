@@ -1,8 +1,11 @@
 <script lang="ts">
 	import Opener from './Opener.svelte';
 	import Projects from './Projects.svelte';
+	import Pictures from './Pictures.svelte';
 	import About from './About.svelte';
-   import Footer from './Footer.svelte';
+   	import Footer from './Footer.svelte';
+
+	export let data;
 </script>
 
 <svelte:head>
@@ -14,6 +17,7 @@
 <div class="app bg-neutral-100 dark:bg-neutral-900 transition-colors">
 	<Opener />
 	<Projects />
+	<Pictures data={data} />
 	<About />
 	<Footer />
 </div>
