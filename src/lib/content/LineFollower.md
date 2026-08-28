@@ -11,13 +11,13 @@ As of writing this, I am in a course called circuit analysis which has a final p
 
 Earlier in the semester, we were supposed to have two separate ECPs, but as time went on, things happened, and the professor scrapped the first. In this time, I had already designed a simple night light circuit which turned on and off depending on the ambient light level. It used a simple photoresistor and opamp (as a comparator) and worked pretty well. I had planned to use this as my project, but after the news I decided to hold it for the final.
 
-<img src="https://i.imgur.com/jr8KkkJ.jpg" alt="Night light circuit" />
+<img src="/images/LineFollower/jr8KkkJ.webp" alt="Night light circuit" />
 
 Over a month before anyone expected anything from me, I was already ordering opamps and trying to decide what I wanted to do. My friends had talked about making a signal generator, and I thought that was cool, but it’s not really me. After hearing what they and others in my class were considering, I decided I wasn’t going to hack something together and I wanted to make something that works by itself and shows a level of understanding that is both practical and fun. I decided on using a similar idea from my night light circuit with photoresistors. The end result of my plan was a two wheeled car that follows a line by reflecting light off of the ground and back to the photoresistor, which could use analog logic to determine which motor to activate.
 
 At this point I gave up on treating this like a school project. This was something I would do outside of school, and I made the conscious decision to treat this like a school sponsored hobby. I had most of the components already, so I felt that if I didn’t go way over budget this would be valid and I would get to do something I wanted to do.
 
-<img src="https://i.imgur.com/fN82my9.png" alt="Final Schematic" />
+<img src="/images/LineFollower/fN82my9.webp" alt="Final Schematic" />
 
 The above schematic is the final design I chose for my circuit after some experiments. After this, there were a few key changes from the initial idea that I feel are important enough to mention. First, his car needed four wheels. As in, if it did not have four wheels, it would be sloppy and hard to control. And second, this car needed way more power than I thought.
 
@@ -27,17 +27,17 @@ So, I decided to use a 2N2222 transistor to pull more current from the battery, 
 
 What happened next. Well, I am going to skip a few weeks for midterms, and we will jump back in after I built the chassis. I used a 3D printed frame, some cheap Alibaba motors, some superglue and it was built. Nothing else was really notable in that time except for my reason for designing the chassis the way I did, which I purposefully built with disassembly in mind.
 
-<img src="https://i.imgur.com/5NMw0Pe.jpg" alt="Chassis" />
+<img src="/images/LineFollower/5NMw0Pe.webp" alt="Chassis" />
 
 After that, I received my LM358 opamps and I started soldering the project together. Because of the power consumption requirements, I chose to make two separate driver boards. It was more efficient and allowed me to pull more current and sperate the system like a brain, the right side controlling the left side of the car and left the right side of the car. Everything went together really cleanly and I feel like the project was done at this step. 
 
-<img src="https://i.imgur.com/MsJpvJM.jpg" alt="Final Car" />
+<img src="/images/LineFollower/MsJpvJM.webp" alt="Final Car" />
 
 But I did a few more things after that, and that’s part of the reason I don’t feel like this is a school project. This part’s me.
 
 The next thing I did was design my own PCB, very much like I did the keyboard, and I was going to leave it there. My professor talked about making homemade PCBs, so I looked it up and decided to do it myself. I chose to use ferric chloride as an etchant, and after receiving the solution, I ironed on the print of my circuit onto some copper plate and etched the copper away. (I do not know why I chose the night I did, but it was below freezing and it made the process take even longer.)
 
-<img src="https://i.imgur.com/CZJk7V3.jpg" alt="PCB" />
+<img src="/images/LineFollower/CZJk7V3.webp" alt="PCB" />
 
 This board is completely unnecessary as it was never deployed onto the car, but it was a cool proof of concept nonetheless. The car’s transceiver-receiver system of photoresistors and LEDs was also tuned further to the point I made a separate rig to test values and distances which were most efficient.
 
@@ -45,7 +45,7 @@ This board is completely unnecessary as it was never deployed onto the car, but 
 
 At the end of the day, this project was extremely successful. I am very happy with how it came out. I even got to help my friends with their signal generator before their presentation. 
 
-<img src="https://i.imgur.com/oYDFj8a.jpg" alt="Signal generator" />
+<img src="/images/LineFollower/oYDFj8a.webp" alt="Signal generator" />
 
 Anyway, this was cool, and I really didn’t do the technical side of this justice. It was more fun to write about the process vs why it works and the logic it runs on. As you can probably see, this is something I am deeply interested in, and I hope I can do something similar in the future.
 

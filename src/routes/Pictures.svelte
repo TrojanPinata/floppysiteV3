@@ -47,7 +47,7 @@
 
 <svelte:window bind:innerWidth on:keydown={handleKeydown} />
 
-<div class="mx-auto my-48 px-4 sm:px-6 md:px-8 lg:px-12 bg-neutral-100 dark:bg-neutral-900 transition-colors">
+<div class="mx-auto my-36 px-4 sm:px-6 md:px-8 lg:px-12 bg-neutral-100 dark:bg-neutral-900 transition-colors">
 	<div class="relative py-6 sm:py-10 md:py-16" bind:clientWidth={containerWidth} style={geometry ? `height: ${geometry.containerHeight}px` : 'min-height: 300px'}>
         {#if geometry}
   		    {#each data.latest.slice(0, geometry.boxes.length) as photo, i (photo.slug)}
@@ -58,7 +58,7 @@
   		    {/each}
         {/if}
 	</div>
-    <div class="my-8">
+    <div class="sm:my-4 lg:my-8">
         <a href="/photos" class="w-full sm:w-2/3 md:w-1/2 mx-auto rounded-xl border-2 border-dashed border-gray-400 dark:border-gray-600 flex items-center justify-center text-center hover:bg-gray-50 dark:hover:bg-neutral-700 transition">
             <div class="">
                 <p class="py-4 mx-16 text-lg font-medium text-black dark:text-neutral-100 transition-colors">View All Photos →</p>

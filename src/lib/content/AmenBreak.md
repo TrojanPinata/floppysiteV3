@@ -9,15 +9,15 @@ Regardless, I did want to try my hand at something similar. As I am writing and 
 
 At first, when I was conceptualizing what this should do, I was listening to a track from 1080 Snowboarding called <a href="https://www.youtube.com/watch?v=NQ70k4Zt-Nw">White Out</a> which features the <a href="https://en.wikipedia.org/wiki/Amen_break">Amen Break</a>. Now I am not going to go over the history of electronic music here because it is not my place, but this a extremely influential and highly sampled four bars of music. It is widely mixed and modified piece of music that I thought would be cool to be able to mix and match in a sort of drum machine style. Mix in the YWM and you can see where I got this idea from.
 
-<img src="https://i.imgur.com/8MGpDfV.jpeg" alt="overdrive pedal i made" />
+<img src="/images/AmenBreak/8MGpDfV.webp" alt="overdrive pedal i made" />
 
 I am going to keep the complicated technical aspects of why I made certain decisions short to keep this palatable, but understand that I using micropython and a Raspberry Pi Pico to make this work. I using I2S to output the audio to a MAX98357 DAC/amp chip and in the package, I included a second DAC in case I wanted to use both I2S channels on the Pico (which I later would find out is impossible because of how micropython implemented PIO). The reason I did it this way is because I did not want to spend a month writing C code for this dumb project.
 
-<img src="https://i.imgur.com/sP3LGRn.jpeg" alt="guts" />
+<img src="/images/AmenBreak/sP3LGRn.webp" alt="guts" />
 
 And with that, let me explain all of the feature creep things that made it into the final design. As you can see below, the shell is 3D printed as I wanted to include a synth slider. This would be possible using the uasynchio micropython package but is <i>buggy</i> to say the least. A knob was included to control the tempo and two switches control the separate mute controls. Six buttons are on the face, one for each bar/instrument and one for each Yeah! and Woo!. A aux out and speaker are also included, but not isolated and two leds for status are located on the front.
 
-<img src="https://i.imgur.com/HCTraJs.jpeg" alt="topside" />
+<img src="/images/AmenBreak/HCTraJs.webp" alt="topside" />
 
 With that, I don't think there is really much I want to go over. There were a lot of compromises with this project, but to be able to play audio one a microcontroller is such a large leap in technology. Here is a demo of the device with my shoddy code running.
 

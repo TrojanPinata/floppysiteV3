@@ -7,7 +7,7 @@ Over the past eight months, I haven't really been working on any public projects
 
 In order to graduate with a degree in Computer Engineering, all ABET accredited engineering programs require students to complete a capstone course or “senior design” in order to demonstrate the ability to participate on a team and develop a solution to a problem from the ground up. After forming a group with some friends, we decided on a project in our robotics department to improve on an existing blimp for a competition called Defend the Republic (DTR). DTR is sponsored by the Office of Naval Research (ONR) and includes a number of schools who fly their blimps against each other in a form of robot quidditch. The idea is that blimps can score game balls (which are neutrally buoyant and float in the air) in goals to score points. Points are determined by if the ball was scored manually (with a controller) or autonomously (with code and sensors). The blimp we were improving upon was developed for defense, essentially preventing other agents from scoring.
 
-<img src="https://i.imgur.com/SwJb4bq.jpeg" alt="blimp flying at event" />
+<img src="/images/Blimp/SwJb4bq.webp" alt="blimp flying at event" />
 
 But all of that was essentially irrelevant during design. Soon after starting the project, we realized it would be easier to start from scratch with a new blimp design. The lab we were working in has a focus on making unique and research-based blimps which do non-traditional movement and use unconventional methods of seeing the world. We wanted to make a blimp that does this rather than focusing completely on the game. To start, we workshopped some ideas, did some research, and came up with a proposal for our supervising professor.
 
@@ -19,7 +19,7 @@ After a lot of testing and design, we realized that stability was also essential
 
 If you know anything about weird aircraft, this sounds similar to a Vertical Take-Off and Landing (VTOL) aircraft with how the wings and motors move. With this design =, we can even take off vertically like one. The big difference is that our blimp has the ability to change wing direction in flight. In fact, as there are no ailerons, the blimp has to roll or change motor speeds to turn. This made the blimp a challenge to fly but also was that unique motion we wanted. Something that is worth mentioning as well is that by this point in the design phase, we had it set in stone that our blimp was going to go fast. Like really fast. We designed for it to be quick and stable at high speeds, but our motor choice made this certain (4600 kV motors or 3800 kV motors depending on the day). 
 
-<img src="https://i.imgur.com/CYoQv1T.jpeg" alt="top down of blimp" />
+<img src="/images/Blimp/CYoQv1T.webp" alt="top down of blimp" />
 
 With the frame built, I suppose it is time to talk about the code and hardware running everything. This blimp runs a Raspberry Pi Zero 2W with a Pi camera V3, a BNO055 IMU and BMP390 barometer, and two 2S 300mAh batteries in parallel. The motors are driven by ESCs and both those and the servos are driven by PWM directly from the Pi’s GPIO pins. This is done via the pigpio library, which worked much better than I could have ever expected given that we did not use real PWM channels. The blimp was controlled via a PS3 controller, and the program was started and monitored via SSH.
 
@@ -41,7 +41,7 @@ Oh? You forgot about the competition? Well don’t worry, at the point we starte
 
 One thing I think is worth mentioning is how modular our entire design is. The balloons of our blimp can easily be swapped out, each part is quickly replaceable, batteries are easy to change, and wings are easy to change. Even code is easy to swap out. We built our program to make it easy to swap things around and modify. There’s a single file dedicated to flags we can toggle or change in order to change the blimp’s behavior. Theres even a togglable web UI I built in order to give the us a way to monitor motor speeds and messages during presentations (this was completely vanity but looks awesome). While prep for competition did make parts of it a mudball, it does its job and is highly modular. 
 
-<img src="https://i.imgur.com/dXkCcDG.jpeg" alt="our blimp with a basket attachment" />
+<img src="/images/Blimp/dXkCcDG.webp" alt="our blimp with a basket attachment" />
 
 Our autonomous routine didn’t really change for the competition, though that would end up not being important once things got rolling. As we focused on research so much, we were planning on being a defensive agent and simply crashing into our opponents. We changed the detection to hunt for the opposing blimp’s colors and added a function specifically to crash into them. This was the plan going into it, but what we didn’t know was the format of the game.
 
@@ -71,7 +71,7 @@ DTR has a rule against popping other blimps. But there are no rules about push o
    ></iframe>
 </div>
 
-<img src="https://i.imgur.com/yYRnHmV.jpeg" alt="blimp doing its job by pinning enemy agent" />
+<img src="/images/Blimp/yYRnHmV.webp" alt="blimp doing its job by pinning enemy agent" />
 
 Overall, we ended third. Another school more focused on winning beat us in our last match. But we were still really successful. In fact, we weren’t done, we still needed to prove that this whole system was doing unique motion. My school has a Optitrack system – one of those big motion capture system that they use to do movies – and we were able to get in to record our blimps movements. We recorded a bunch of unconventional moves and processed them with Matlab into datasets and then into animations. As a final result, we were able to confirm that yes, our blimp is able to do weird movements (shocker) but also gathered data on why and exactly how.
 
@@ -88,6 +88,6 @@ Overall, we ended third. Another school more focused on winning beat us in our l
 
 I am really proud of this project. We placed well, proved our thesis, and preformed on a large stage where we realistically shouldn’t have been. We even presented this whole project to our entire department and were runners-up for an award. I am so happy I can show off this project as it is entirely unique to everything else that I do. It was intense, we put a lot of hours into it – more then I think most senior design groups do – and I could not be happier with the result. I hope you – the reader – can see what I see in this. Thank you to everyone who worked with me on this.
 
-<img src="https://i.imgur.com/2wUS9g7.jpeg" alt="my group" />
+<img src="/images/Blimp/2wUS9g7.webp" alt="my group" />
 
 Until next time.

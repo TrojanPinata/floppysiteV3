@@ -1,9 +1,10 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import exifr from 'exifr';
+import sharp from 'sharp';
 import { imageSize } from 'image-size';
 
-const IMAGES_DIR = path.resolve('static/images');
+const IMAGES_DIR = path.resolve('static/pictures');
 
 export async function getAllPhotos() { 
     const filenames = (await fs.readdir(IMAGES_DIR)).filter((f) => /\.(jpe?g|png|webp|avif)$/i.test(f));
@@ -12,9 +13,8 @@ export async function getAllPhotos() {
         filenames.map(async (filename) => {
             const filePath = path.join(IMAGES_DIR, filename);
             const stats = await fs.stat(filePath);
-            const exif = await exifr
-                .parse(filePath, ['DateTimeOriginal', 'Orientation']) 
-                .catch(() => null);
+            const metadata = await sharp(filePath).metadata();
+            const exif = metadata.exif ? await exifr.parse(metadata.exif).catch(() => null) : null;
 
             const date = exif?.DateTimeOriginal instanceof Date ? exif.DateTimeOriginal : stats.mtime;
             const thumbBuffer = await fs.readFile(filePath);
@@ -22,8 +22,8 @@ export async function getAllPhotos() {
 
             return {
                 slug: path.parse(filename).name,
-                image: `/images/${filename}`,
-                thumbnail: `/images/${filename}`,
+                image: `/pictures/${filename}`,
+                thumbnail: `/pictures/${filename}`,
                 width,
                 height,
                 date

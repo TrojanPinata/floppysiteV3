@@ -9,7 +9,7 @@ A while back, I made the <a href="https://brianchill.us/projects/TinyKeeb">TinyK
 
 My idea stemmed from talking to my friend one day and thinking about how I would actually produce more than one at a time, while also increasing the quality to be a feasible retail product. I started by tackling the issues with the housing and keys, flattening as much as possible to make the keys easier to print and easier to press, then I redesigned the housing to improve the print quality, and devised a solution of sanding, spraying with body filler, sanding some more, painting, and finishing to make the bodies look significantly better than the first prototype. I was really happy with this, so I also designed a new PCB compared to the first one which would make putting them together easier and overall streamline the process. The hardest part of the first design was that I had to manually solder every switch in by hand, and I had to have wires running to a Pi Pico behind the board to make it function. I designed everything to get away from that, and I was super excited to try my new production methods and make a couple of these to sell. I’ve always wanted to get into selling the things I make, but I don’t want them to feel cheap or break easily, so this felt like a good time to try it out.
 
-<img src="https://i.imgur.com/s78jCXY.jpeg" alt="improved housing and keycaps" />
+<img src="/images/Failure/s78jCXY.webp" alt="improved housing and keycaps" />
 
 A couple of things happened at this stage in development. I am a very budget conscious person, and by extension I keep very detailed spreadsheets of costs and potential returns for projects like this. The biggest issue with my design, was that it was time intensive (for the housing). Paints did cost a bit, but that was by no means the bulk of the cost. Also, the PCB was only ~$36, so crunching all of the numbers, I could sell these for $80 and make a cool $40 per keyboard I make after selling a small run of 10. Scaling definitely helps offset costs, and I felt like this was a good amount to make back my investment. I should note, I was fully okay with losing this money on this project, all of my projects are losses, and this was no different in my head. I am really just doing this the love of the game and I wanted to see if it was even possible to sell something I made.
 
@@ -23,11 +23,11 @@ So I ordered the boards, my pockets significantly lighter, and I manufactured al
 
 Once the PCBs arrived, I then soldered all of the switches down (I was using the super low force Omron switches and they were like $100 for 650, yes I was pretty in the red at this point). I then soldered on the Pi Picos onto the back like sort of backpacks to the primary PCB so I could reduce the amount of wires I needed to run.
 
-<img src="https://i.imgur.com/tApasgT.jpeg" alt="all colors in a row" />
+<img src="/images/Failure/tApasgT.webp" alt="all colors in a row" />
 
 And with that, the boards were complete! Except, none of them work. Why? Because the Pi Pico’s being soldered to the back of the PCBs were too large for the tiny cases, and pressed up against the housing, disconnecting the contacts with the compression force. In other words, if the user presses a key too hard the keyboard sometimes stops working. Great! This was fixable on most keyboards, but not all. I managed to get seven fixed up, and I was still going to sell them, but just to friends.
 
-<img src="https://i.imgur.com/7Yj9ipQ.jpeg" alt="peter, what are you doing!?" />
+<img src="/images/Failure/7Yj9ipQ.webp" alt="peter, what are you doing!?" />
 
 Except what’s this? A crack? How did this get there??? Well it turns out, the amount of body filler and paint I had to use to fix the housings was so much larger than expected, that the generous tolerances I left for the fit of the board into the case were too small, and the PCBs put so much outward pressure on the cases that they split along the layer lines. Not only that, I didn’t notice because this wasn’t an issue inside my house, but the cold temperatures of November caused the housings to contract around the PCB and become more brittle.
 
@@ -39,4 +39,4 @@ This has been one of the most valuable learning experiences I have had with a pr
 
 Until next time.
 
-<img src="https://i.imgur.com/gCOVbbG.jpeg" alt="they are very pretty though" />
+<img src="/images/Failure/gCOVbbG.webp" alt="they are very pretty though" />

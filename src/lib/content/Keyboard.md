@@ -15,7 +15,7 @@ My game plan was to use the knowledge from the guide and combine the features of
 
 I then discovered <a href="https://github.com/Envious-Data/Env-KB">Envious-Data’s Delierium</a>. It is a unique keyboard in that it utilizes a Raspberry Pi Pico, a relatively new microcontroller on the market, and merges it with the Mysterium to get a easy to design result with my style. So, I decided to merge all three keyboards into something I could actually use. I ended up with a 75% keyboard with all of the features I wanted on one PCB with some bonus’s like having a button for the power LED and a through-hole (THT) USB-C connector. I am skipping a lot of the finer details, so I do apologize if some stuff gets left out. This project took literally months.
 
-<img src="https://i.imgur.com/imwtyWo.png" alt="PCB" />
+<img src="/images/Keyboard/imwtyWo.webp" alt="PCB" />
 
 At this point, I was disenchanted with the whole project, and I didn’t really want to continue working on it, so I started fiddling around with the firmware side of everything. I had initially wanted to use <a href="https://github.com/qmk/qmk_firmware">QMK</a>, but after seeing that it did not support the Pico yet, I was forced to use <a href="https://github.com/KMKfw/kmk_firmware">KMK</a>, which in the end was actually easier to use and bug fix. There is so much on this side, but what it comes down to is that their <a href="http://kmkfw.io/">documentation</a> is a bit rough around the edges, but superb in providing examples and information about what features you want to add.
 
@@ -23,21 +23,21 @@ I posted all of my firmware to <a href="https://github.com/TrojanPinata/Model-K-
 
 It was stressful, but after a long wait, here is the result:
 
-<img src="https://i.imgur.com/sm7P6aJ.jpg" alt="the best shot" />
+<img src="/images/Keyboard/sm7P6aJ.webp" alt="the best shot" />
 
-<img src="https://i.imgur.com/8z9aFxO.jpg" alt="top down" />
+<img src="/images/Keyboard/8z9aFxO.webp" alt="top down" />
 
-<img src="https://i.imgur.com/TcUVaum.jpg" alt="back" />
+<img src="/images/Keyboard/TcUVaum.webp" alt="back" />
 
 Overall, everything runs very smoothly, and I haven’t seen any major problems yet. During assembly, I cracked the 1.5mm acrylic switchplate in a few spots, which sucks, but is primarily hidden by the keycaps so I don’t really notice that much. I couldn’t find the right size screws which forced me to drill out all of the holes. Stuff like that was annoying, but in the end, it left me with a fantastic result I can type stuff like this page with. 
 
 I ended up posting this whole thing on <a href="https://github.com/TrojanPinata/Model-K-Pico">Github</a>, so you can see it there. It's called the Model K-Pico as I thought it would be cute to call it something sililar to the Model M, which I love deeply and have had for a really long time. A lot more went into this than I am describing, but I think that would be too much content for this to be interesting. It’s not really necessary for the general audience to know or care why I chose 1.5mm acrylic vs 3mm acrylic or Delrin (cost lol). Anyway, cool project, cool result.
 
-<img src="https://i.imgur.com/U2uxMqs.jpg" alt="logo/components" />
+<img src="/images/Keyboard/U2uxMqs.webp" alt="logo/components" />
 
-<img src="https://i.imgur.com/WDH4Dx8.jpg" alt="oled screen" />
+<img src="/images/Keyboard/WDH4Dx8.webp" alt="oled screen" />
 
-<img src="https://i.imgur.com/dubV2il.jpg" alt="credit + stabilizer + bare PCB" />
+<img src="/images/Keyboard/dubV2il.webp" alt="credit + stabilizer + bare PCB" />
 
 Until next time.
 
@@ -55,7 +55,7 @@ As obvious by the title, there are two other keyboard and keyboard adjacent proj
 
 Model C on the other hand, is certainly doable, but much more technically complicated and ambitious than I had originally planned. Model C is not a keyboard, but a calculator powered by a ATmega32A and mechanical switches. The goal was to make it very similar to the <a href="https://www.switchkeys.com.au/products/tentaku-mechanical-calculator">Tentaku Mechanical Calculator</a>. This, in theory, is not very difficult, but requires some deeper understanding of microcontrollers which I do not currently have. Combine that with a bit of scope creep and this too will be postponed (I also need a laser cutter for this lmao).
 
-<img src="https://i.imgur.com/cONYI2J.png" alt="Model C PCB Layout" />
+<img src="/images/Keyboard/cONYI2J.webp" alt="Model C PCB Layout" />
 
 There you go, that’s what I have been doing in the world of keyboards the past few months. I will probably do more work on the Model A in the future so look forward to that.
 

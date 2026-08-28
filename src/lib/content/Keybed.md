@@ -3,7 +3,7 @@ title: "Designing My Own Synthesizer"
 date: "2026-07-03"
 ---
 
-<img src="https://i.imgur.com/dv3T7lK.jpeg" alt="keybed" />
+<img src="/images/Keybed/dv3T7lK.webp" alt="keybed" />
 
 ## Background
 
@@ -19,7 +19,7 @@ That is my dream, but unfortunately dreams of products are made without thinking
 
 Synthesizers are much more complicated then that, and by extension I would not be able to make a project write up like this if I tried to learn everything all at once. Instead, what I have tried to do is break the project down into smaller realistic chunks which are feasible for me to actually do over a couple of months (kind of, you will see how ridiculous this gets). For this page, all I am trying to do is develop a working keybed and get some sound out of a off the shelf audio library.
 
-<img src="https://i.imgur.com/3maW4dT.jpeg" alt="ready?" />
+<img src="/images/Keybed/3maW4dT.webp" alt="ready?" />
 
 ## Making a keybed
 
@@ -33,7 +33,7 @@ You might have noticed that this is pretty simple. <a href="https://en.wikipedia
 
 This is a vast oversimplification, but what you need to know is that this extra complexity is not free. Where switches can be tied to interrupts, analog sensors like hall sensors cannot. What I chose to do is tie each key to an <a href="https://www.digikey.com/en/product-highlight/t/texas-instruments/tmux6104-analog-multiplexer">analog multiplexer</a> and simply scan each sensor using the microcontroller’s onboard ADC and use that value as the position (after a whole calibration process I made). Now I am going to state the obvious, this is not really a good idea. It solves the problem, but is also a product of me doing this project on a shoestring budget. This entire project has ended up costing me less then $100, which mostly went to the microcontroller (we will talk about in a minute), a cheap display, some O rings, and the multiplexers. If I had more money for this I would have chose to make a PCB for the base of the keybeds and embed the hall sensors there instead of whatever the hell this is.
 
-<img src="https://i.imgur.com/8Sk5WVJ.jpeg" alt="oh, that's gore" />
+<img src="/images/Keybed/8Sk5WVJ.webp" alt="oh, that's gore" />
 
 I also would have added multiple regional ADCs which could be accessed over SPI, so that reading would be less reliant on a slow onboard ADC and more on a faster piece of dedicated hardware. Then SPI would be the limitation, which is more then acceptable.
 
@@ -43,7 +43,7 @@ The keybed itself does need calibration, though I kind of solved that by doing i
 
 Yes, it does. I chose to use a <a href="https://www.pjrc.com/store/teensy41.html">Teensy 4.1</a> for my microcontroller for a variety of reasons with this project. The biggest was that it has phenomenal audio libraries and works well with <a href="https://platformio.org/">PlatformIO</a>. This made my life a lot easier. I really wouldn’t like to have to make my own audio library (this is foreshadowing). It is also fast enough, and has all of the necessities I would like. I typically use my go to microcontroller the <a href="https://en.wikipedia.org/wiki/RP2040">RP2040</a> or it’s big brother the <a href="https://en.wikipedia.org/wiki/RP2350">RP2350</a> (which I have not used in a project yet, but will soon because the RP2354A has embedded flash which is super sick and I imagine will make for a cool small form factor project). The only issues with them is that they are dog slow at 150MHz. The <a href="https://www.nxp.com/products/i.MX-RT1060">NXP i.MX RT1060</a> on the Teensy is much faster at 600MHz and low latency, which is desirable. Programming it was easy, and I was able to make a basic synth with multiple oscillators, ADSR, filters, and reverb for somewhat low effort while learning everything about how it works. There will be a full demo at the end with me playing it.
 
-<img src="https://i.imgur.com/f9mqS9I.jpeg" alt="breadboard wiring nightmare" />
+<img src="/images/Keybed/f9mqS9I.webp" alt="breadboard wiring nightmare" />
 
 I want to do a better job of amplification and DAC in the future since I think that is pretty important and I would like to get studio quality out of this device, but for now I am just using a <a href="https://learn.adafruit.com/adafruit-max98357-i2s-class-d-mono-amp/pinouts">MAX98357A</a> the I2S thing they have going on with that. There are much better DACs then this, and I think I could do proper stereo audio and handle a full size XLR jack and quarter inch jack for that (along with USB-C and 3.5mm). I also think this should be a capable MIDI keyboard for plugging into a computer, since I think this should be accessible for anyone of any equipment level.
 
@@ -53,7 +53,7 @@ Something that became apparent very early on was that I will never be able to ma
 
 In the future, I want to learn how to make a display attach directly to a PCB. That is not something I have ever done due to how expensive it is to make a mistake, but I think it makes for a more unified design. I really like single PCB products. In other words products where everything is on a single board, and I think to do this I need to learn how to make each component myself.
 
-<img src="https://i.imgur.com/kZfbp6z.jpeg" alt="display module" />
+<img src="/images/Keybed/kZfbp6z.webp" alt="display module" />
 
 ## Demo
 
@@ -93,7 +93,7 @@ I think I may try to fit <a href="https://github.com/pichenettes/stmlib/tree/mas
 
 The keybed as I mentioned earlier should be modular, and have ADCs that can communicate over SPI. I designed the keybed to be in octaves that can simply squish together to make larger keyboards. Because of this, I think it’s actually in a pretty good position as it is. I would like to add more general UI things, and more functionality like sampling, sequencing, saving audio, and MIDI, though that is for the future.
 
-<img src="https://i.imgur.com/sgy4WYg.jpeg" alt="thanks for reading" />
+<img src="/images/Keybed/sgy4WYg.webp" alt="thanks for reading" />
 
 ## Conclusion
 

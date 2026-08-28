@@ -5,7 +5,7 @@ date: "2024-08-28"
 
 Hear me out: what if there was a reasonably easy to follow guide and kit for building keyboards with a low barrier of entry which anyone can build with the right materials and a desire to learn?
 
-<img src="https://github.com/TrojanPinata/Macropad-Pico/blob/main/images/DSC_0714.JPG?raw=true" alt="a pretty nice photo" />
+<img src="/images/Macropad/DSC_0714.webp" alt="a pretty nice photo" />
 
 A few months ago I developed a <a href="https://github.com/TrojanPinata/Pico">custom Raspberry Pi Pico</a> with the intention of learning how to develop boards with microcontrollers and have them manufactured with PCBA. The main changes I made were for quality of life with USB-C, a reset button, and black soldermask (which is really just me being annoyed the pico on the Model-K wasn't black). This was a wild success and left me with ~30 Pi Picos which I gave to a few of my friends and use for development. Safe to say I will likely never buy another Pico.  One of my friends wanted to make a keyboard out of his and while I think that is a great I idea, it is really difficult to manufacture keyboards with traditional cases using 3D printers as the bed plate is usually too small, or extremely costly if shipped out to another company. Once I saw he wanted to make a macropad and showed me some of the things he was looking at, I started looking into what guides people follow online. To put it briefly, I was not happy.
 
@@ -15,8 +15,8 @@ Because of these things, I wanted to design a simple 12-key macropad which repre
 
 I've listed the materials and a short guide on <a href="https://github.com/TrojanPinata/Macropad-Pico">GitHub</a> as well as a <a href="https://youtu.be/6qyvscmvLPk">short video guide</a>. I hope this will make getting into the manufacturing side of the keyboard hobby easier, as well as act as a introduction for some people into soldering and possibly CAD through modifying my designs for further customization.
 
-<img src="https://i.imgur.com/e50AqeJ.png" alt="Render" />
+<img src="/images/Macropad/e50AqeJ.webp" alt="Render" />
 
-<img src="https://github.com/TrojanPinata/Macropad-Pico/blob/main/images/DSC_0733.JPG?raw=true" alt="on desk" />
+<img src="/images/Macropad/DSC_0733.webp" alt="on desk" />
 
 That's it. Until next time.

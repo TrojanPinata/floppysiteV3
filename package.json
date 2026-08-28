@@ -44,6 +44,7 @@
 		"gray-matter": "^4.0.3",
 		"image-size": "^2.0.2",
 		"justified-layout": "^4.1.0",
-		"marked": "^15.0.12"
+		"marked": "^15.0.12",
+		"sharp": "^0.35.4"
 	}
 }
