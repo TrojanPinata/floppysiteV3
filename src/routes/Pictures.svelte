@@ -58,7 +58,7 @@
   		    {/each}
         {/if}
 	</div>
-    <div class="sm:my-4 lg:my-8">
+    <div class="lg:my-2 py-4">
         <a href="/photos" class="w-full sm:w-2/3 md:w-1/2 mx-auto rounded-xl border-2 border-dashed border-gray-400 dark:border-gray-600 flex items-center justify-center text-center hover:bg-gray-50 dark:hover:bg-neutral-700 transition">
             <div class="">
                 <p class="py-4 mx-16 text-lg font-medium text-black dark:text-neutral-100 transition-colors">View All Photos →</p>

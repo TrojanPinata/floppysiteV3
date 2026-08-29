@@ -52,8 +52,11 @@
                 <p class="typewriter-header text-4xl font-semibold text-neutral-900 dark:text-neutral-100 transition-colors">Photos</p>
             </div>
         </div>
+        <div class="py-6 text-md font-semibold text-neutral-600 dark:text-neutral-400 transition-colors flex items-center justify-center text-center">
+            <p>Shot on Sony a7iv w/Sony 35mm Prime or Pentax Spotmatic SP1000. Photos processed with Darktable.</p>
+        </div>
         <div class="mx-auto px-4 sm:px-6 md:px-8 lg:px-40">
-            <div class="relative my-16 py-6 sm:py-10 md:py-16" bind:clientWidth={containerWidth} style={geometry ? `height: ${geometry.containerHeight}px` : 'min-height: 300px'}>
+            <div class="relative my-2 py-6 sm:py-10 md:py-16" bind:clientWidth={containerWidth} style={geometry ? `height: ${geometry.containerHeight}px` : 'min-height: 300px'}>
                 {#if geometry}
                     {#each data.photos as photo, i (photo.slug)}
                         {@const box = geometry.boxes[i]}
