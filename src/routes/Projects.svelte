@@ -31,10 +31,10 @@
     			</a>
   		{/each}
 
-  		<a href="/projects" class="rounded-xl border-2 border-dashed border-gray-400 dark:border-gray-600 flex items-center justify-center text-center hover:bg-gray-50 dark:hover:bg-neutral-700 transition">
-   		<div class="p-4">
-      		<p class="text-lg font-medium text-black dark:text-neutral-100 transition-colors">View All Projects →</p>
-   		</div>
-  		</a>
+		<a href="/projects" class="rounded-xl border-2 border-dashed border-gray-400 dark:border-gray-600 flex items-center justify-center text-center hover:bg-gray-50 dark:hover:bg-neutral-700 hover:scale-102 transition">
+			<div class="p-4">
+				<p class="text-lg font-medium text-black dark:text-neutral-100 transition-colors">View All Projects →</p>
+			</div>
+		</a>
 	</div>
 </div>

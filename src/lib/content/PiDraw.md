@@ -13,29 +13,29 @@ So, I ended up sitting on the idea and waited for the semester to end, but by th
 
 As I have mentioned somewhere on here before, I am the owner of a <a href="https://www.prusa3d.com/product/original-prusa-mini-semi-assembled-3d-printer-4/">Prusa Mini+</a>, a fantastic printer which I have used and abused for the past few years. I love this thing, and the only way I would get rid of it is if everything died on it at once. It follows the standard 3D printer format of the past few years: X-axis moves extruder while Y-axis moves the bedplate. After thinking about it long and hard, I made the decision of what I wanted to do. I was going to make a drawing robot in the style of a 3D printer.
 
-<img src="https://i.imgur.com/Rl5YHX6.jpg" alt="Diy solenoid driver and underpowered motor drivers" />
+<img src="/images/PiDraw/Rl5YHX6.webp" alt="Diy solenoid driver and underpowered motor drivers" />
 
 And this is where the first line of this page comes into play. I went through so many iterations of this thing it’s not even funny. It would be literally impossible for me to mention every frame design or solenoid driver or motor driver config or software version (I think you get the point). Above is just one example of one of my designs. I had to buy more rubber belt because I ended up using it all on previous tests and made so many physical modifications, I stopped taking pictures for a bit because I would forget before the whole thing looked entirely different. The number of either under powered or straight up cooked motor drivers was insane.
 
 This project was surprisingly quick compared to most of my summer projects, but I suppose it was longer than average. I feel like I did a lot – so much that it’s hard to write about. So, I think I’ll just show some highlights. 
 
-<img src="https://i.imgur.com/04zMgVV.jpg" alt="Motor drivers being tested" />
+<img src="/images/PiDraw/04zMgVV.webp" alt="Motor drivers being tested" />
 
 Here is a picture of me testing some new L298N motor drivers which worked significantly better than my Adafruit stepper driver hat. I used two 1.2A stepper motors which pulled <i>a lot</i> of power. The drivers would get so hot from continuous use that in order to extend their useful lives I would spray them while running with a bottle of compressed air (which is actually refrigerant). Cooling was a major issue once I reached the matching point between the drivers and the motors. The Adafruit driver was consistantly hot and very close to popping, but it was largely uncoolable (and like, didn't work) which is why I ended up switching.
 
-<img src="https://i.imgur.com/qz85ows.jpg" alt="Cooked L298N motor driver" />
+<img src="/images/PiDraw/qz85ows.webp" alt="Cooked L298N motor driver" />
 
 I actually ended up blowing up a few of said motor drivers.
 
-<img src="https://i.imgur.com/DOgLT2d.jpg" alt="Packaged motor drivers" />
+<img src="/images/PiDraw/DOgLT2d.webp" alt="Packaged motor drivers" />
 
 The goal was to mount everything and have it be a solid package, but long prints melted the hot glue and thus mounting was a bit silly. Also, I was paranoid after blowing up a few drivers, so I wanted easier access to the heat sinks for a fan and a bottle of compressed air to assist.
 
-<img src="https://i.imgur.com/l32Rj4b.jpg" alt="Final design" />
+<img src="/images/PiDraw/l32Rj4b.webp" alt="Final design" />
 
 This was the final(ish) design before I started testing it thoroughly. I basically would stress test this thing until it broke, fix it, then repeat. I couldn’t leave it on my primary desk to run, as the motors had no dampening and would shake the entire thing so loud it was audible outside of the room.
 
-<img src="https://i.imgur.com/Ef2MCmU.jpg" alt="Print result (witch from Bad Apple!" />
+<img src="/images/PiDraw/Ef2MCmU.webp" alt="Print result (witch from Bad Apple!" />
 
 <a href="https://youtu.be/LTuY1gQYgm8"> Here is a drawing style test pattern</a>
 

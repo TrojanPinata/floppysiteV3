@@ -11,4 +11,4 @@ I posted my work in progress code to my <a href="https://github.com/TrojanPinata
 
 Anyways, until next time.
 
-<img src="https://i.imgur.com/Ui5L7Jh.png" alt="screenshot of OS post boot" />
+<img src="/images/MOS/Ui5L7Jh.webp" alt="screenshot of OS post boot" />

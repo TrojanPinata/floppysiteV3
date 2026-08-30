@@ -15,28 +15,28 @@ export function setCookie(name: string, value: string, days: number = 365): void
    a bodge, and I am already being lazy by using tailwind. */
 
 function createThemeStore() {
-  const { subscribe, set } = writable('light');
+  	const { subscribe, set } = writable('light');
 
-  return {
-	subscribe,
-	init: () => {
-	  const saved = getCookie('theme');
-	  const preferred = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'dark' : 'light');
-	  applyTheme(preferred);
-	},
-	toggle: () => {
-	  let current;
-	  subscribe(v => current = v)();
-	  const next = current === 'dark' ? 'light' : 'dark';
-	  applyTheme(next);
-	}
-  };
+  	return {
+		subscribe,
+		init: () => {
+			const saved = getCookie('theme');
+			const preferred = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'dark' : 'light');
+			applyTheme(preferred);
+		},
+		toggle: () => {
+			let current;
+			subscribe(v => current = v)();
+			const next = current === 'dark' ? 'light' : 'dark';
+			applyTheme(next);
+		}
+  	};
 
-  function applyTheme(theme: string) {
-	document.documentElement.classList.toggle('dark', theme === 'dark');
-	setCookie('theme', theme);
-	set(theme);
-  }
+  	function applyTheme(theme: string) {
+		document.documentElement.classList.toggle('dark', theme === 'dark');
+		setCookie('theme', theme);
+		set(theme);
+  	}
 }
 
 export const theme = createThemeStore();

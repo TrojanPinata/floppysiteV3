@@ -7,7 +7,7 @@ A long time ago, I published my first project to my <a href="https://github.com/
 
 Now, nearly two years later, I was looking through some old projects to cannibalize and I remembered this project. I didn't want to completely waste the project specific components that were on board as they took a while to procure, so I decided I wanted to try and make it work. I decided to overhaul the design of the internals and housing in order to significantly improve performance. There were a lot of flaws in the original design, so I chose to make less compromises and make this actually usable.
 
-<img src="https://i.imgur.com/Rz5yYzq.jpg" alt="microphone box" />
+<img src="/images/DIYMicRedux/Rz5yYzq.webp" alt="microphone box" />
 
 The biggest flaw with the original design was separating the mic module from the amplifier and ADC assembly by connecting the sensitive module wires with a long and fragile cable. This was a bad move - especially when combined with the accessory components not being perfectly grounded within the housing. My shoddy brass mesh faraday cage left a lot to be desired and my soldering was primitive at best as I was just getting used to my tools. There were a lot of changes that I think were necessary to make and the solution to all of these issues was to literally just <i>put it in a normal microphone body.</i>
 
@@ -15,11 +15,11 @@ Now, I had what I would consider the worst dedicated microphone on the market, a
 
 After a long wait for the PCBs and some soldering, heres the result: 
 
-<img src="https://i.imgur.com/Q5EVr53.jpg" alt="pcb next to housing" />
+<img src="/images/DIYMicRedux/Q5EVr53.webp" alt="pcb next to housing" />
 
-<img src="https://i.imgur.com/JwMTfCq.jpg" alt="microphone open" />
+<img src="/images/DIYMicRedux/JwMTfCq.webp" alt="microphone open" />
 
-<img src="https://i.imgur.com/adiQimk.jpg" alt="completed microphone" />
+<img src="/images/DIYMicRedux/adiQimk.webp" alt="completed microphone" />
 
 This new generation of the microphone works significantly better and sounds way too good to be a USB microphone. The noise I used to get with the old version is gone and so is pretty much every issue. I’m really happy with this result. I was expecting there to be some crosstalk as I haven’t really designed audio equipment before, but that doesn’t seem to be the case.
 

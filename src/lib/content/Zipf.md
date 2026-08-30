@@ -13,7 +13,7 @@ In order to do this, I decided to use a python script to break it into its indiv
 
 But in the end, my relatively simple code outputs some really interesting, but expected results. Here is the list of the <a href="https://en.wikipedia.org/wiki/Most_common_words_in_English">top 50 most common words</a> and here is my <a href="https://i.imgur.com/Hy7Zogu.png">output list</a>. Pretty similar, eh? In fact, it even aligns with the logarithmic principle Zipf’s law applies to. Here is the curve when plotted with Excel. 
 
-<img src="https://i.imgur.com/bDfezKQ.png" alt="Zipfian curve" />
+<img src="/images/Zipf/bDfezKQ.webp" alt="Zipfian curve" />
 
 I find this really interesting in both the principle and how easy it was for me to get my own data. I wanted to see how professional sources stack up and I was planning to post all of the trials I ran, but in reality, the data is kind of boring. Its all the exact same thing, same rank, with a few outliers and different total word count. The most interesting thing I put through my script was my own <a href="https://i.imgur.com/tV8hCd9.png">paper from high school</a>, and sure enough it had the exact same result. Overall, it’s kind of scary. There is the common saying that if a chimpanzee were to sit at a typewriter long enough, it could write Shakespeare. Probably. It would also probably take a long time. But if that very same chimpanzee were to use this law when typing random words, it would most likely accomplish this very same thing in half of the time.
 

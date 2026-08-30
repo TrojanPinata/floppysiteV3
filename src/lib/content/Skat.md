@@ -21,17 +21,17 @@ Knocking to cause a last rotation is extremely potent because statistically spea
 
 Performing 25 million simulations for the most consistency, we can see some common trends: 
 
-<img src="https://i.imgur.com/6g5AKUc.png" alt="three player game stats" />
+<img src="/images/Skat/6g5AKUc.webp" alt="three player game stats" />
 
 These are the results for playing a small game with only three players. Notice how there is a average losing score of 14-16 within the first two hands. If you wanted to be really safe, you would need ~19-20 to only have a 15% chance of losing on the second hand of the game. Also notice that there is a ~0.7% chance any player gets Skat over the entire game.
 
-<img src="https://i.imgur.com/HLf3AiD.png" alt="eight player game stats" />
+<img src="/images/Skat/HLf3AiD.webp" alt="eight player game stats" />
 
 With the three player game in mine, now consider a larger game of eight players. Notice how the average losing card decreases from 14-16, to 11-14. Again considering the standard deviation (which has also decreased), we can see that a player only needs ~16 to be more than likely successful with a  early knock. We can also see the trend that later knocks are dangerous, as the odds of the entire table having extremely high hands after ten rounds and the requisite cards needed are much greater.
 
 A strategy that could be used for the greatest effect would be to not knock, and play for Skat in a situation where you get a high draw, and knock only if you are just above the threshold (say one standard deviation) in order to preserve your lives. Though, this strategy is more difficult with less players as seen with the Skat odds, which increase with the trend.
 
-<img src="https://i.imgur.com/9tmlxkg.png" alt="sixteen player game stats" />
+<img src="/images/Skat/9tmlxkg.webp" alt="sixteen player game stats" />
 
 Finally, to prove a extreme situation (with this many people you would realistically crack open another deck as 12 circulating cards is far too few for a reasonable game), sixteen players bring this trend even further. As we can see, the Skat chance has increased from 2% to 3% and  the average losing hand barely dips below what a single card can offer. 
 

@@ -7,15 +7,15 @@ This is a quick writeup for a project I could have finished but ultimately ended
 
 Before I sat down to do this, there were a few things I saw which inspired me. First, probably 3ish years ago at this point, I read and watched <a href="https://eater.net/vga">Ben Eater’s DIY video card</a>. It was one of the first projects I have ever tried on my own to replicate. I ended up using KiCAD to run the traces long before I started my degree or related projects. I now understand the protocols and methodology behind why he did some of the things the way he did, and I used the same controller concepts from here to make my basic controller. The second was a video and corresponding repository by <a href="https://github.com/T-K-233/RISC-V-Single-Cycle-CPU">T-K-233</a>, outlining a single-cycle RISC-V processor which played Bad Apple! onto an 8x8 display. This <i>clearly</i> was my inspiration for this because you can guess what I wanted to play on this. 
 
-<img src="https://i.imgur.com/4fQTgnh.png" alt="my original schematic I made in 2020" />
+<img src="/images/Mipsvga/4fQTgnh.webp" alt="my original schematic I made in 2020" />
 
 As the Basys 3 has a Artix-7 on it, that’s what I was planning on designing around. The goal was to design a single-cycle MIPS processor in VHDL which would take frames stored in the data memory and store them to the frame buffer (aka another place in memory, notably the first block). The frame buffer would be overwritten each time a new frame was loaded. An image could be displayed by simple not changing the buffer’s contents.
 
-<img src="https://i.imgur.com/54FTGCI.png" alt="vga controller" />
+<img src="/images/Mipsvga/54FTGCI.webp" alt="vga controller" />
 
 This plan seemed doable. I had already designed a basic MIPS processor for my computer organization class and implementing it with a custom controller outlined by the common VGA standards was easy enough. I planned to make the entire video/image binary color in order to save on space and overhead, as well as making it much more similar to the <a href="https://brianchill.us/#/Oled">OLED project</a> I did mid last year. These things combined made for a simple controller which worked well in testing. 
 
-<img src="https://i.imgur.com/5pJ3FLj.png" alt="my mips processor" />
+<img src="/images/Mipsvga/5pJ3FLj.webp" alt="my mips processor" />
 
 To get the data for my data memory module, I wrote a python script to convert a image/video into usable text which could easily be stored in the .vhd file. The result was one of the more decently written scripts I have written and taught me how unbelievably inefficient storing video in such a discrete way was. One look at the file size made me very skeptical of the Artix-7 line’s possible LUT cells (foreshadowing).
 

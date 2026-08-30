@@ -7,13 +7,13 @@ I want to preface this and say I have written this before. There was even a whol
 
 To start off, let me give you an idea of what I was initially working with and what spared my desire to do this. There were a few things that made me want to work with OLED screens before this, but I think the biggest one was simply the fact that they are so unbelievably cheap and because I already had an Arduino Uno sitting dormant in my desk drawer. I received a few screens, a couple <a href="https://www.amazon.com/Songhe-0-96-inch-I2C-Raspberry/dp/B085WCRS7C">128x64</a> and two <a href="https://www.amazon.com/%20%20Pieces-Display-Module-SSD1306-3-3V-5V/dp/B08CDN5PSJ">128x32s</a> and I kind of felt satisfied with my understanding of them. I had made a calculator (no buttons, just serial and a screen) and a clock, but I really didn’t see what the purpose a small I2C screen like these could do. That is until I discovered this neat mechanical keyboard called the <a href="https://cannonkeys.com/products/gb-satisfaction-75-keyboard-round-2">Satisfaction 75</a>, a keyboard with a built in OLED screen. That got me thinking about how cool it is (I really want to make my own keyboard with a large screen but that’s for another time). And in some magnificent coincidence, <a href="https://mitxela.com/">Mitxela</a> would go on to release <a href="https://www.youtube.com/watch?v=TfBQi_peHI4">this video</a>. This is what inspired me to do this. Ahh, I just realized, I haven’t explained what I made yet.
 
-<img src="https://i.imgur.com/3jR7rm1.jpg" alt="Arduino Uno w/ 128x64 OLED I2C Screen" />
+<img src="/images/Oled/3jR7rm1.webp" alt="Arduino Uno w/ 128x64 OLED I2C Screen" />
 
 To put it simply, I saw that video and that keyboard, and I thought, “yeah, I could do that”. Spoiler alert, Mixtela is using a HDMI screen so no, I cannot do that. But you know what, I thought I could try doing it. My goal was to play Bad Apple on a 128x64 screen powered off an Arduino receiving instructions over serial.
 
 Ok. There are a few systems we need to define in order to make this work. First off, how am I going to get a video to an Arduino over a serial connection. Well, that’s a hard question to answer. I don’t know much about serial (or at least didn’t before this), and I thought there was only one simple way of doing this. I thought that I could shovel a whole frame onto an Arduino Uno and display it, wipe the screen and show the next. 24 times per second. :| Anyway, that’s not possible for a few reasons, the main one being that the Uno has 2KB of SRAM and there is 8192 bits of data per black and white image (these screens only support binary display data, which is light and convenient to work with, and a very small but equally as important issue is that there is no way a 16MHz processor an keep up with that pace). The alternative was to display each line individually and clear the stored data after each one is printed. This turned out to be a vastly better solution. After much experimenting, like literally 4 days of it, I finally came to the conclusion that this wouldn’t work like a VGA screen where simple blanking intervals could be defined, and I added markers to the end of each line of line of pixels to make this and forced checks after each read.
 
-<img src="https://i.imgur.com/ZC5hoKY.jpg" alt="Screen errors..." />
+<img src="/images/Oled/ZC5hoKY.webp" alt="Screen errors..." />
 
 <a href="https://imgur.com/LEraV45">Lots and lots of errors with the original process...</a>
 
@@ -21,7 +21,7 @@ And after that big block of text, you might me asking yourself, “what does tha
 
 I now had a way to get bytes to the device, and prepped frames for the screen, so I just need to send them. I wrote a python script (See: bw.py) using <a href="https://www.anaconda.com/">Anaconda</a> for python as it has a library called <a href="https://opencv.org/">OpenCV</a>, which when called with the cv2 library in python, has fantastic image processing tools which can convert images to binary colors. I ran this in python and before the images were saved to files, dumped the bare code into a text file. This raw data could then be changed into bytes and sent using another python script I wrote called injector.py. These files allowed me to crush the video even more, add fancy frame/line bounds, and respond to requests from the Arduino. This side works remarkably well and can keep up with all of the Arduino’s demands.
 
-<img src="https://i.imgur.com/dUY0jIg.jpg" alt="Arduino Mega w/ screen" />
+<img src="/images/Oled/dUY0jIg.webp" alt="Arduino Mega w/ screen" />
 
 The Arduino was another story, however. I will spare writing literal pages of content on why this device causes me so much grief but let me put all of my biggest problems into one line. Serial buffer, lack of memory, Serial.print() not running even while buffer is clear, screen not displaying, initialization failed, and finally wrong decoding of bytes. There was much more, but that was just the stuff I can remember from the past two days. The Arduino takes a string of bytes, decodes them back into binary, and the binary (originally generated by the script) represents on and off bits which can be written back to the screen. Halfway through this project, while lack of RAM was killing my soul, a miracle was graced upon me in the form of an Arduino Mega 2560. 8KB of RAM made this so much better. Simple stuff like this made the next few days of troubleshooting and rewriting much faster and easier (uploading a sketch is so much faster).
 
@@ -35,6 +35,6 @@ I spent a lot of time making this and writing this. I haven’t done a project o
 
 Anyway, here’s the <a href="https://github.com/TrojanPinata/serial_oled">Github repository</a> for this project, thank you for reading this, I worked hard on it. I'll be back with some more frames soon, I promise!
 
-<img src="https://i.imgur.com/yp73Jso.jpg" alt="See you then!" />
+<img src="/images/Oled/yp73Jso.webp" alt="See you then!" />
 
 Until next time.

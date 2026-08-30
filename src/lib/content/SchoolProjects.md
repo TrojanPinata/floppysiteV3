@@ -13,7 +13,7 @@ This lab was completed for Digital System Design. The goal was to make a basic A
 
 For Digital System Design, I also built a ripple carry adder. This was built using half and full adders. I can't show my wired circuit, but I can show my schematic for it. The results show a generic RCA result table. This project was also replicated in VHDL on the Basys board, yielding similar results.
 
-<img src="https://i.imgur.com/yGbBSUs.png" alt="ripple carry adder"/>
+<img src="/images/SchoolProjects/yGbBSUs.webp" alt="ripple carry adder"/>
 
 ### Signal Transimission - Digital Signal Processing 
 
@@ -27,13 +27,13 @@ This was the final homework for my C programming class my sophomore year. The ba
 
 This was the first lab for my CT Signal Processing class (which used discrete time funnily enough). The purpose of this lab was to write a MATLAB script that could analyze a sound file and simulate, via a separate script, an approximation of the recorded signal. I ended up recording a chord I played on a keyboard with my phone, porting it into MATLAB, processing it, and displaying it as a spectrogram. This was a rather simple lab, but the point was to demonstrate a basic level of competence in displaying frequencies and frequency changes over time.
 
-<img src="https://i.imgur.com/E5Mrr99.png" alt="tritone spectrogram" />
+<img src="/images/SchoolProjects/E5Mrr99.webp" alt="tritone spectrogram" />
 
 ### Basic MIPS Processor in VHDL - Computer Organization
 
 This was a comprehensive project for my computer organization class which involved creating parts of a MIPS processor and combining them to make a functioning processor. My implementation was a bit more advanced than necessary, implementing memory mapped I/O and basic branch prediction. The entire processor was run on the Basys 3 development board and written in Vivado.
 
-<img src="https://i.imgur.com/ZC7ml1L.png" alt="mips processor block diagram" />
+<img src="/images/SchoolProjects/ZC7ml1L.webp" alt="mips processor block diagram" />
 
 ### Basic Bash Shell - Data Structures and Systems Programming
 
@@ -43,7 +43,7 @@ This was the final project for my half data structures and half systems programm
 
 For the final project of my embedded systems class, we were tasked to design <i>something</i> (yes it was that vague for us as well) which used the components in our lab kits and demonstrated the concepts from the semester. Of course, this project clearly takes inspiration from the other projects I have done – most notably the serial OLED project and PyDraw. The result was a bit lackluster as the components we had were rough and we had no budget at all. The parts are all reused and from the remains of past projects + some 3d prints to make it as easy to manufacture as possible. We didn’t end up winning, but I really put a lot of work in for this project and I am proud of the ridiculously large codebase I wrote for this. As obvious by the name and references, this was basically a drawing robot without the bearings or solenoid. It moved via commands/arguments and a joystick built into a controller. The position was displayed with a SSD_1306 OLED (not in our lab kits) and due to the mundanity of the project as a whole, we added a video player for the system (one utilizing OpenCV and the BeagleBone Black’s hardware) and played Bad Apple on it.
 
-<img src="https://i.imgur.com/Udq4dsP.jpg" alt="final project as displayed for demo" />
+<img src="/images/SchoolProjects/Udq4dsP.webp" alt="final project as displayed for demo" />
 
 ### Hardware Sorting with FPro Core - FPGA Design in VHDL
 
@@ -61,4 +61,4 @@ This entry is not exactly one single project, but a compilation of projects I di
 
 For my microcontrollers course, we were given several projects over the semester ranging from powering our MSP430 Launchpads with a solar cell and reading the voltages with the ADC, to making a working simon says game using timers and capture and compare registers. But overall, my favorite project was the final one, making a ball move based on a accelerometer. This sounds simple, but for this to work, we were tasked with first interfacing with the SPI TFT display, then interfacing, setting up, and both reading and writing to the I2C accelerometer, then finally designing the game logic to allow the ball to naturally move within the bounds of the screen. This project worked out well for me, once I got I2C working on the board. Most people take for granted what the libraries they use do, and the i2c_write library is very tedious and not tolerant of even the smallest errors. This lab was fun and I think the result really sums up the class as a whole.
 
-<img src="https://i.imgur.com/v40628E.jpeg" alt="debug screen showing the ball bouncing along with the raw accelerometer values" />
+<img src="/images/SchoolProjects/v40628E.webp" alt="debug screen showing the ball bouncing along with the raw accelerometer values" />
