@@ -1,6 +1,6 @@
 <script>
 	let current = 0;
-  	let images = [ '/BH.jpg' ];
+  	let images = [ 'DSC02184_1.webp', 'DSC02257.webp', 'DSC02194.webp', 'DSC02248.webp', '/BH.jpg' ];
 
 	/* If you click on my face, it will show you a different picture. */
   	function next() { current = (current + 1) % images.length; }
@@ -10,7 +10,7 @@
 	<section class="bg-neutral-100 dark:bg-neutral-900 transition-colors flex flex-col lg:flex-row items-center mt-15 mb-15 w-full max-w-6xl mx-auto justify-center font-mono px-4 ">
   		<div class="w-full flex justify-center">
     		<button on:click={next}>
-      		<img src={images[current]} alt="Brian Hill" class="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-[48em] h-auto rounded shadow" />
+      		<img src={images[current]} alt="Brian Hill" loading="lazy" class="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-[48em] h-auto rounded shadow" />
     		</button>
   		</div>
 
